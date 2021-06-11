@@ -18,7 +18,7 @@
 
         <link rel="stylesheet" href="./CSS/agregar_servicio.css" type="text/css">
         <script src="https:/kit.fontawesome.com/a50cbb9aa4.js"></script>
-        <script type="text/javascript" src=""></script>
+        <script type="text/javascript" src="./JS/agregar_servicio.js"></script>
 
         <title>Agregar servicio extra</title>
     </head>
@@ -29,27 +29,27 @@
                 <div id="title" class="row justify-content-md-center">
                     <h1 class="justify-content-md-center">Agrega un nuevo servicio</h1>
                 </div>
-                <form id="form-agregar" action="agregar_servicio.php" name="agregar_servicio" method="post">
+                <form id="form-agregar" action="agregar_servicio.php" name="agregar_servicio" method="POST">
                     <div class="row justify-content-md-center">
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="row justify-content-md-center">
                                 <!-- Campos para el ingreso de datos -->
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-6" for="nombre_serv">Nombre: </label>
+                                    <label class="control-label col-xs-6" for="nombre_serv" style="padding-bottom: 45px;">Nombre: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
                                     <input class="form-control" id="nombre_serv" name="nombre_serv" type="text" placeholder="Nombre del servicio" minlength="5" required/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-2" for="precio_serv">Precio: </label>
+                                    <label class="control-label col-xs-2" for="precio_serv" style="padding-bottom: 45px;">Precio: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
                                     <input class="form-control" id="precio_serv" name="precio_serv" type="number" placeholder="Costo diario" minlength="4"   Z required/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-2">Descripción: </label>
+                                    <label class="control-label col-xs-2" for="descripcion" style="padding-bottom: 45px;">Descripción: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
                                     <textarea class="form-control" id="descripcion" name="descripcion" type:"text" placeholder="Describe aquí el nuevo servicio" rows="5" minlength="5" required></textarea>
@@ -58,7 +58,7 @@
                             <!-- Fin Campos para el ingreso de datos -->
                             <br><br>
                             <div class="botones">
-                                <input id="submit" name="submit" type="submit" class="btn btn" value="Enviar">
+                                <input id="submit" name="submit" type="submit" class="btn btn" value="Agregar">
                                 <input id="reset" name="reset" type="reset" class="btn btn" value="Volver">
                             </div>
                         </div>

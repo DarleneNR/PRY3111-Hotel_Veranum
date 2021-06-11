@@ -1,6 +1,6 @@
 .i-body {
     background: #fff;
-    padding: 20px;
+    padding: 40px 30px;
 }
 
 .frame-agregar {
@@ -8,7 +8,7 @@
     box-shadow: 0px 1px rgba(60, 61, 61, 0.815);
     align-content: center;
     margin: 11px;
-    padding: 20px 20px;
+    padding: 25px 20px;
     margin-left: 10%;
     width: 80%;
     border: 2px solid #8b8b99d2;
@@ -21,7 +21,7 @@
 #title {
     font-family: "Bahnschrift SemiBold";
     color: rgb(17, 17, 17);
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 40px;
     text-align: center;
 }
@@ -43,7 +43,8 @@ label {
 form div input, textarea {
     font-family: "Bahnschrift";
     margin-right: 0px;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 3px;
 }
 
 div.botones input#reset {
@@ -52,7 +53,7 @@ div.botones input#reset {
     background: rgb(177, 187, 216);
     font-display:initial;
     margin-right: 30px;
-    margin-top: -50px;
+    margin-top: -30px;
     border: thin solid rgb(70, 69, 69);
     text-decoration: none;
     cursor: pointer;
@@ -65,7 +66,7 @@ div.botones input#submit {
     float: right;
     background: rgb(177, 187, 216);
     margin-right: 45px;
-    margin-top: -50px;
+    margin-top: -30px;
     border: thin solid rgb(70, 69, 69);
     text-decoration: none;
     cursor: pointer;
@@ -93,4 +94,16 @@ div.botones input#submit:hover {
     padding: 0px;
     position: relative;
     top: 13px;
+}
+
+/* Validación de Formulario */
+label#nombre_serv-error.error,label#precio_serv-error.error,label#descripcion-error.error {
+    color: rgba(136, 28, 28, 0.966);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+span.error{ 
+    color: red; 
+    font-size: 0.7em;
 }

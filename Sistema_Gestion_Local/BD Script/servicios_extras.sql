@@ -4,4 +4,4 @@ CREATE TABLE `servicios_extras` (
   `desc_servicio` varchar(300) DEFAULT NULL,
   `precio` int(11) NOT NULL COMMENT 'Costo diario en pesos chilenos',
   PRIMARY KEY (`id_servicio`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;

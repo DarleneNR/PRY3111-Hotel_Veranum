@@ -1,41 +1,38 @@
 <?php
 
-// Asegurar que el nombre en el campo incluide, esté el nombre del archivo de conexión a la BD
 include('connection.php');
 session_start();
 
-if (isset($_POST['serv_extras'])) {
+if (isset($_POST['Agregar'])) {
 
-    // Aqui se está captando los datos ingresados en los campos mencionados
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    // Encriptación de contraseña
-    $password_hash = password_hash($password, PASSWORD_BCRYPT);
+    // Aquí se está captando los datos ingresados en los campos mencionados
+    $nombre_serv = $_POST['nombre_serv'];
+    $precio_serv = $_POST['precio_serv'];
+    $descripcion = $_POST['descripcion'];
 
-    // Aqui se consulta si el email existe en la DB 
-    $query = $connection->prepare("SELECT * FROM users WHERE EMAIL=:email");
-    $query->bindParam("email", $email, PDO::PARAM_STR);
+    // Aquí se consulta si el nombre del servicio existe en la DB 
+    $query = $connection->prepare("SELECT * FROM users WHERE NOMBRE_SERVICIO=:nombre_servicio");
+    $query->bindParam("nombre_servicio", $nombre_serv, PDO::PARAM_STR);
     $query->execute();
 
-    // Si el email existe entonces se muestra el mensaje de error
+    // Si el nombre del servicio existe entonces se muestra el mensaje de error
     if ($query->rowCount() > 0) {
-        echo '<p class="error">El email ingresado ya está registrado!</p>';
+        echo '<p class="error">El servicio ingresado ya está registrado!</p>';
     }
 
-    // Si el email no existe entonces se muestra el mensaje 
+    // Si el nombre del servicio no existe entonces se muestra el mensaje 
     if ($query->rowCount() == 0) {
-        $query = $connection->prepare("INSERT INTO users(USERNAME,PASSWORD,EMAIL) VALUES (:username,:password_hash,:email)");
-        $query->bindParam("username", $username, PDO::PARAM_STR);
-        $query->bindParam("password_hash", $password_hash, PDO::PARAM_STR);
-        $query->bindParam("email", $email, PDO::PARAM_STR);
+        $query = $connection->prepare("INSERT INTO servicios_extras(NOMBRE_SERVICIO,DESC_SERVICIO,PRECIO) VALUES (:nombre_serv,:descripcion,:precio_serv)");
+        $query->bindParam("nombre_serv", $nombre_serv, PDO::PARAM_STR);
+        $query->bindParam("descripcion", $descripcion, PDO::PARAM_STR);
+        $query->bindParam("precio_serv", $precio_serv, PDO::PARAM_STR);
 
         $result = $query->execute();
 
         if ($result) {
-            echo '<p class="success">Your registration was successful!</p>';
+            echo '<p class="success">La información ingresada fue registrada con éxito</p>';
         } else {
-            echo '<p class="error">Something went wrong!</p>';
+            echo '<p class="error">Algo salió mal. Informacion no registrada</p>';
         }
     }
 }

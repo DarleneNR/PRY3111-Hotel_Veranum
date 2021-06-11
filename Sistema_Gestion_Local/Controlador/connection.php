@@ -1,7 +1,7 @@
 <?php
 
 define('USER', 'root');
-define('PASSWORD', 'bdhotelveranum');
+define('PASSWORD', '');
 define('HOST', 'localhost');
 define('DATABASE', 'hotel_veranum');
 
