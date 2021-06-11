@@ -1,0 +1,96 @@
+.i-body {
+    background: #fff;
+    padding: 20px;
+}
+
+.frame-agregar {
+    background-color: rgba(228, 230, 235, 0.548);
+    box-shadow: 0px 1px rgba(60, 61, 61, 0.815);
+    align-content: center;
+    margin: 11px;
+    padding: 20px 20px;
+    margin-left: 10%;
+    width: 80%;
+    border: 2px solid #8b8b99d2;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+/* Formulario */
+#title {
+    font-family: "Bahnschrift SemiBold";
+    color: rgb(17, 17, 17);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+#form-agregar {
+    padding-top: 30px;
+    font-family: "Microsoft YaHei";
+    color: rgb(34, 34, 34);
+    align-content: center;
+}
+
+label {
+    font-family: "Bahnschrift";
+    color: rgb(32, 32, 32);
+    padding-top: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form div input, textarea {
+    font-family: "Bahnschrift";
+    margin-right: 0px;
+    margin-bottom: 40px;
+}
+
+div.botones input#reset {
+    color: rgba(12, 12, 12, 0.849);
+    float: right;
+    background: rgb(177, 187, 216);
+    font-display:initial;
+    margin-right: 30px;
+    margin-top: -50px;
+    border: thin solid rgb(70, 69, 69);
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+div.botones input#submit {
+    color: rgba(12, 12, 12, 0.849);
+    float: right;
+    background: rgb(177, 187, 216);
+    margin-right: 45px;
+    margin-top: -50px;
+    border: thin solid rgb(70, 69, 69);
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+div.botones input#reset:hover {
+    background-color: rgb(95, 105, 134);
+}
+div.botones input#submit:hover {
+    background-color: rgb(95, 105, 134);
+}
+
+/* Pie de página */
+#pie-footer {
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+.titulo-footer {
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    top: 13px;
+}
