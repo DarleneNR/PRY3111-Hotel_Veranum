@@ -16,7 +16,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
-        <link rel="stylesheet" href="./CSS/servicios_extras.css" type="text/css">
+        <link rel="stylesheet" href="./CSS/serv_extras.css" type="text/css">
         <script src="https:/kit.fontawesome.com/a50cbb9aa4.js"></script>
         <script type="text/javascript" src=""></script>
 
@@ -30,10 +30,10 @@
                 <li><a href="#" style="text-decoration:none;">Reservar</a></li>
                 <li><a href="#" style="text-decoration:none;">Mantenedores <span class="fa fa-angle-down"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="serv_extras.html" style="margin-bottom:-22px;margin-left:-90px;color:#242629b9;font-size:15px;">Menú Servicios Extras</a></li>
-                        <li><a href="#" style="margin-bottom:-22px;margin-left:-90px;color:#242629b9;font-size:16px;">Menú Habitaciones</a></li>
-                        <li><a href="#" style="margin-bottom:-22px;margin-left:-90px;color:#242629b9;font-size:16px;">Menú Descuentos</a></li>
-                        <li><a href="#" style="margin-left:-90px;color: #242629b9;font-size:16px;">Menú Promociones</a></li>
+                        <li><a href="serv_extras.html" style="margin-bottom:-20px;margin-left:-80px;color:#242629b9;font-size:15px;">Menú Servicios Extras</a></li>
+                        <li><a href="#" style="margin-bottom:-20px;margin-left:-80px;color:#242629b9;font-size:15px;">Menú Habitaciones</a></li>
+                        <li><a href="#" style="margin-bottom:-20px;margin-left:-80px;color:#242629b9;font-size:15px;">Menú Descuentos</a></li>
+                        <li><a href="#" style="margin-left:-80px;color: #242629b9;font-size:15px;">Menú Promociones</a></li>
                     </ul>
                 </li>
                 <li><a href="#" style="text-decoration: none;">Otros</a></li>
@@ -41,40 +41,65 @@
         </header>
         <!-- Fin Barra de Menú -->
 
-        <!-- Contenido -->
-        <div class="container">
-            <table class="table table-bordered table-sm">
-                <thead>
-                <tr>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
-                    <th>Email</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                </tr>
-                <tr>
-                    <td>Mary</td>
-                    <td>Moe</td>
-                    <td>mary@example.com</td>
-                </tr>
-                <tr>
-                    <td>July</td>
-                    <td>Dooley</td>
-                    <td>july@example.com</td>
-                </tr>
-                </tbody>
-            </table>
+        <!-- Tabla -->
+        <div class="container" id="info-servicios">
+            <h1>Deatalle de Información - Servicios Extras</h1>
+            <div class="row justify-content-md-center">
+                <!-- Agregar registro -->
+                <div action="agregar_servicio.php" method="post" name="agregar_servicio"  href="agregar_servicio.html">
+                    <span id="add">Agregar nuevo servicio 
+                        <a href="agregar_servicio.html" style="color:#212529"><i class="fas fa-plus-circle" id="boton-add"></i></a>
+                    </span>
+                </div>
+                <!-- Agregar registro -->
+                <table class="table table-bordered table-sm" id="table-info">
+                    <thead>
+                    <tr>
+                        <th style="align-content: center;">ID</th>
+                        <th>Nombre del Servicio Extra</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
+        <!-- Fin Tabla -->
 
-
-
-
-        <!-- Fin Contenido -->
+        <div class="container">
+            
+        </div>
 
         <!-- Footer -->
         <div id="pie-footer">

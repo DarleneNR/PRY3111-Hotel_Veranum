@@ -20,7 +20,7 @@ header ul {
 
 header ul li a {
     display: block;
-    padding: 10px 110px;
+    padding: 10px 105px;
     color: #737373;
     text-decoration: none;
     font-weight: bolder;
@@ -36,19 +36,18 @@ header ul ul {
     position: absolute;
     top: 60px;
     display: block;
-    background-color: #c5cbceb6;
-    border-radius: 0.7em;
-    transform: translateX(5%);
+    background-color: #d8dada94;
+    border-radius: 0.6em;
+    transform: translateX(4%);
     opacity: 0;
     transition: all.2s;
     padding: 0;
-    font-weight: bolder;
-    font-size: small;
+    font-family: "Microsoft Sans Serif";
 }
 
 .sub-menu {
     width: 295px;
-    margin-left: 50px;
+    margin-left: 35px;
 }
 
 /* Animación en los sub menús e ícono*/
@@ -65,8 +64,46 @@ header ul li:hover ul {
     opacity: 1;
     transform: translateX(0%);
 }
+header ul ul li:hover {
+    padding: 0;
+    transform: translateX(5%);
+    transition: all.3s;
+}
 
+/* Información */
+h1 {
+    margin-top: 130px;
+    font-family: "Bahnschrift SemiBold";
+}
 
+/* Tabla */
+#info-servicios {
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+/* Agregar registro */
+#add {
+    float: right;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: large;
+}
+span #boton-add {
+    font-size: 150%;
+}
+
+#table-info{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+#table-info thead tr th {
+    text-align: center;
+}
+#table-info tbody tr td {
+    text-align: center;
+}
 
 /* Pie de página */
 #pie-footer {
