@@ -61,7 +61,7 @@
                         <a href="agregar_servicio.html" style="color:#212529"><i class="fas fa-plus-circle" id="boton-add"></i></a>
                     </span>
                 </div>
-                <table id="table-info" name="listar_servicios" class="table table-bordered table-hover table-striped" action="./Controlador/up_prueba.php" method="POST">
+                <table id="table-info" name="listar_servicios" class="table table-bordered table-hover table-striped" action="" method="POST">
                     <thead class="thead-light">
                         <tr>
                             <th>ID</th>
@@ -85,7 +85,7 @@
                                     <td>
                                         <a href="actualizar_servicio.php?id=<?php echo $dato->id_servicio;?>" style="color:#212529"
                                         name="actualizar_serv"><i class="fas fa-pencil-alt"></i></a>  |  
-                                        <a href="up_prueba2.php?id=<?php echo $dato->id_servicio;?>" style="color:#212529" 
+                                        <a href="eliminar_servicio.php?id=<?php echo $dato->id_servicio;?>" style="color:#212529" 
                                         name="eliminar_serv"><i class="fas fa-trash-alt"></i></a>
                                     </td>
                                 </tr>

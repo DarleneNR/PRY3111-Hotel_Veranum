@@ -2,6 +2,7 @@
 
     if (!isset($_POST['oculto'])){
         header('Location: menu_serv_extras.php');
+        exit();
     }
 
     include('connection.php');

@@ -1,7 +1,7 @@
 <?php
 
     if (!isset($_GET['id'])){
-        header('Location: menu_serv_extras.php');
+        exit();
     }
 
     include('Controlador/connection.php');
