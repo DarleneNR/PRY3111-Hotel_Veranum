@@ -4,7 +4,7 @@
 }
 
 .frame-agregar {
-    background-color: rgba(228, 230, 235, 0.548);
+    background-color: rgba(235, 237, 241, 0.548);
     box-shadow: 0px 1px rgba(60, 61, 61, 0.815);
     align-content: center;
     margin: 11px;
@@ -41,18 +41,16 @@ label {
 }
 
 form div input, textarea {
-    font-family: "Bahnschrift";
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 3px;
 }
 
-div.botones input#reset {
+div button#volver{
     color: rgba(12, 12, 12, 0.849);
     float: right;
-    background: rgb(177, 187, 216);
-    font-display:initial;
-    margin-right: 30px;
+    background: #54777e94;
+    margin-right: 150px;
     margin-top: -30px;
     border: thin solid rgb(70, 69, 69);
     text-decoration: none;
@@ -60,12 +58,13 @@ div.botones input#reset {
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    height: 35px;
 }
-div.botones input#submit {
+div button#agregar{
     color: rgba(12, 12, 12, 0.849);
     float: right;
-    background: rgb(177, 187, 216);
-    margin-right: 45px;
+    background: #54777e94;
+    margin-right: -185px;
     margin-top: -30px;
     border: thin solid rgb(70, 69, 69);
     text-decoration: none;
@@ -73,12 +72,13 @@ div.botones input#submit {
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    height: 35px;
 }
-div.botones input#reset:hover {
-    background-color: rgb(95, 105, 134);
+div button#volver:hover {
+    background: #55948bb9;
 }
-div.botones input#submit:hover {
-    background-color: rgb(95, 105, 134);
+div button#agregar:hover {
+    background: #55948bb9;
 }
 
 /* Pie de página */

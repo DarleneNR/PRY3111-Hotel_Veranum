@@ -29,7 +29,7 @@
                 <div id="title" class="row justify-content-md-center">
                     <h1 class="justify-content-md-center">Agrega un nuevo servicio</h1>
                 </div>
-                <form id="form-agregar" action="agregar_servicio.php" name="agregar_servicio" method="POST">
+                <form id="form-agregar" action="./Controlador/agregar_servicio.php" name="agregar_servicio" method="POST">
                     <div class="row justify-content-md-center">
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="row justify-content-md-center">
@@ -58,8 +58,8 @@
                             <!-- Fin Campos para el ingreso de datos -->
                             <br><br>
                             <div class="botones">
-                                <input id="submit" name="submit" type="submit" class="btn btn" value="Agregar">
-                                <input id="reset" name="reset" type="reset" class="btn btn" value="Volver">
+                                <button type="reset" class="btn btn-info" id="volver" name="volver" value="volver">Volver</button>
+                                <button type="submit" class="btn btn-info" id="agregar" name="agregar_servicio" value="agregar_servicio">Agregar</button>
                             </div>
                         </div>
                     </div>

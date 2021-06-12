@@ -14,7 +14,7 @@ $(document).ready(function () {
     });
 
     /*Redirección a página anterior*/
-    $("#reset").click(function(){
+    $("#volver").click(function(){
         location.href = "serv_extras.html";
     });
 });

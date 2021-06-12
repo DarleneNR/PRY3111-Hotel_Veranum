@@ -1,11 +1,11 @@
 <?php
 
 define('USER', 'root');
-define('PASSWORD', 'bdhotelveranum');
+define('PASSWORD', '');
 define('HOST', 'localhost');
-define('DATABASE', 'hotel_veranum');
+define('DATABASE', 'bd_hotel_veranum');
 
-// Aqui se realiza la conexion a la base de datos
+// Aqui se realiza la conexion de base de datos
 try {
     $connection = new PDO("mysql:host=".HOST.";dbname=".DATABASE, USER, PASSWORD);
 } catch (PDOException $e) {
