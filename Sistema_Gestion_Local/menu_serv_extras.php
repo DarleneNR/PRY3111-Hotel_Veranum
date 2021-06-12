@@ -32,7 +32,7 @@
                 <li><a href="#" style="text-decoration:none;">Reservar</a></li>
                 <li><a href="#" style="text-decoration:none;">Mantenedores <span class="fa fa-angle-down"></span></a>
                     <ul class="sub-menu">
-                        <li><a href="serv_extras.html" style="margin-bottom:-20px;margin-left:-80px;color:#242629b9;font-size:15px;">Menú Servicios Extras</a></li>
+                        <li><a href="menu_serv_extras.php" style="margin-bottom:-20px;margin-left:-80px;color:#242629b9;font-size:15px;">Menú Servicios Extras</a></li>
                         <li><a href="#" style="margin-bottom:-20px;margin-left:-80px;color:#242629b9;font-size:15px;">Menú Habitaciones</a></li>
                         <li><a href="#" style="margin-bottom:-20px;margin-left:-80px;color:#242629b9;font-size:15px;">Menú Descuentos</a></li>
                         <li><a href="#" style="margin-left:-80px;color: #242629b9;font-size:15px;">Menú Promociones</a></li>
