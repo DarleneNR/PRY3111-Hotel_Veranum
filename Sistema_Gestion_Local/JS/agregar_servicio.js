@@ -13,7 +13,7 @@ $(document).ready(function () {
         errorElement : 'span'
     });
 
-    /*Redirección a página anterior*/
+    //Redirección a página anterior
     $("#volver").click(function(){
         location.href = "menu_serv_extras.php";
     });

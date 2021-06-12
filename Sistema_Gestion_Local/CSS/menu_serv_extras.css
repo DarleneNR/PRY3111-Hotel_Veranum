@@ -20,7 +20,7 @@ header ul {
 
 header ul li a {
     display: block;
-    padding: 10px 105px;
+    padding: 12px 105px;
     color: #737373;
     text-decoration: none;
     font-weight: bolder;
@@ -78,14 +78,14 @@ h1 {
 
 /* Tabla */
 #info-servicios {
-    margin-top: 80px;
-    margin-bottom: 90px;
+    margin-top: 70px;
+    margin-bottom: 80px;
 }
 /* Agregar registro */
 #add {
     float: right;
-    margin-top: 80px;
-    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: large;
 }
@@ -95,15 +95,52 @@ span #boton-add {
 
 #table-info{
     margin-top: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
+    background-color: #a4a9b124;
 }
 
-#table-info thead tr th {
-    text-align: center;
+/* DataTable */
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    cursor: default;
+    color: rgb(53, 53, 53) !important;
+    border: 1px solid transparent;
+    background: transparent;
+    box-shadow: none;
 }
-#table-info tbody tr td {
-    text-align: center;
+
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 4px;
+    padding: 5px;
+    background-color: transparent;
+    margin-left: 5px;
 }
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 4px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    border: 1px solid rgb(100, 100, 100);
+    color: rgb(56, 56, 56);
+    border-radius: 4px;
+    border: 1px solid rgba(119, 119, 119, 0.925);
+    background-color: rgba(103, 111, 117, 0.932);
+}
+.dataTables_wrapper .dataTables_paginate.paginate_button.current:hover { 
+    background: linear-gradient(to right, rgb(185, 191, 196) 50%, rgba(105, 139, 134, 0.945)50%);
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 0.5rem 1.100rem;
+    align-content: center;
+}
+table.dataTable, table.dataTable th, table.dataTable td {
+    /* box-sizing: content-box; */
+}
+/* Fin DataTable */
+/* Fin Tabla */
 
 /* Pie de página */
 #pie-footer {

@@ -29,10 +29,11 @@ if (isset($_POST['agregar_servicio'])) {
 
         $result = $query->execute();
 
-        if ($result) {
+        if ($result === TRUE) {
             echo '<p class="success">La información ingresada fue registrada con éxito</p>';
         } else {
             echo '<p class="error">Algo salió mal. Información no registrada</p>';
+            die();
         }
     }
 }

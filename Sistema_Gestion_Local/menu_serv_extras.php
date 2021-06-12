@@ -17,10 +17,19 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-        <link rel="stylesheet" href="./CSS/serv_extras.css" type="text/css">
         <script src="https:/kit.fontawesome.com/a50cbb9aa4.js"></script>
-        <script type="text/javascript" src=""></script>
+
+        <!-- Los iconos tipo Solid de Fontawesome-->
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+	    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+        <!-- Biblioteca DataTable -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+        <script type="text/javascript" charset="utf8" src="cdn.datatables.net/plug-ins/1.10.25/i18n/Spanish.json"></script>
+
+        <link rel="stylesheet" href="./CSS/menu_serv_extras.css" type="text/css">
+        <script type="text/javascript" src="./JS/menu_serv_extras.js"></script>
 
         <title>Servicios Extras - Veranum</title>
     </head>
@@ -44,7 +53,7 @@
         <!-- Fin Barra de Menú -->
 
         <!-- Tabla -->
-        <div class="container" id="info-servicios">
+        <div class="container " id="info-servicios">
             <h1>Detalle de Información - Servicios Extras</h1>
             <div class="row justify-content-md-center">
                 <div>
@@ -52,42 +61,42 @@
                         <a href="agregar_servicio.html" style="color:#212529"><i class="fas fa-plus-circle" id="boton-add"></i></a>
                     </span>
                 </div>
-                <table class="table table-bordered table-sm" id="table-info" name="listar_servicios" method="POST">
-                    <thead>
-                    <tr>
-                        <th style="align-content: center;">ID</th>
-                        <th>Nombre del Servicio Extra</th>
-                        <th>Descripción</th>
-                        <th>Precio</th>
-                        <th></th>
-                    </tr>
+                <table id="table-info" name="listar_servicios" class="table table-bordered table-hover table-striped" action="./Controlador/up_prueba.php" method="POST">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre del Servicio Extra</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
                     </thead>
                     <tbody>
+                        <?php
+                            $reg_servicios =$sentencia->fetchAll(PDO::FETCH_OBJ);
 
-                    <?php
-                        $reg_servicios =$sentencia->fetchAll(PDO::FETCH_OBJ);
-
-                        foreach ($reg_servicios as $dato){
-                            ?>
-                            <tr>
-                                <td><?php echo $dato->id_servicio;?></td>
-                                <td><?php echo $dato->nombre_servicio;?></td>
-                                <td><?php echo $dato->desc_servicio;?></td>
-                                <td><?php echo $dato->precio;?></td>
-                            </tr>
-                            <?php
-                        }
-                    ?>
-
+                            foreach ($reg_servicios as $dato){
+                                ?>
+                                <tr>
+                                    <td><?php echo $dato->id_servicio;?></td>
+                                    <td><?php echo $dato->nombre_servicio;?></td>
+                                    <td><?php echo $dato->desc_servicio;?></td>
+                                    <td><?php echo $dato->precio;?></td>
+                                    <td>
+                                        <a href="actualizar_servicio.php?id=<?php echo $dato->id_servicio;?>" style="color:#212529"
+                                        name="actualizar_serv"><i class="fas fa-pencil-alt"></i></a>  |  
+                                        <a href="up_prueba2.php?id=<?php echo $dato->id_servicio;?>" style="color:#212529" 
+                                        name="eliminar_serv"><i class="fas fa-trash-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <?php
+                            }
+                        ?>
                     </tbody>
                 </table>
             </div>
         </div>
         <!-- Fin Tabla -->
-
-        <div class="container">
-            
-        </div>
 
         <!-- Footer -->
         <div id="pie-footer">
