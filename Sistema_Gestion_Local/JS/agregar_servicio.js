@@ -15,6 +15,6 @@ $(document).ready(function () {
 
     /*Redirección a página anterior*/
     $("#volver").click(function(){
-        location.href = "serv_extras.html";
+        location.href = "menu_serv_extras.php";
     });
 });

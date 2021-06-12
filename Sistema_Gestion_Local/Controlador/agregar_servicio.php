@@ -6,9 +6,9 @@ session_start();
 if (isset($_POST['agregar_servicio'])) {
 
     // Aquí se está captando los datos ingresados en los campos mencionados
-    $nombre_serv = $_POST['nombre_serv'];
-    $precio_serv = $_POST['precio_serv'];
-    $descripcion = $_POST['descripcion'];
+    $nombre_serv = trim($_POST['nombre_serv']);
+    $precio_serv = trim($_POST['precio_serv']);
+    $descripcion = trim($_POST['descripcion']);
 
     // Aquí se consulta si el nombre del servicio existe en la DB 
     $query = $connection->prepare("SELECT * FROM servicios_extras WHERE NOMBRE_SERVICIO=:nombre_servicio");

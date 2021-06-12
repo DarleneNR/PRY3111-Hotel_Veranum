@@ -1,3 +1,9 @@
+<?php
+    include('Controlador/connection.php');
+
+    $sentencia = $connection->query("SELECT * FROM servicios_extras");
+?>
+    
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,10 +17,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-        <!-- Validación con librerias -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
         <link rel="stylesheet" href="./CSS/serv_extras.css" type="text/css">
         <script src="https:/kit.fontawesome.com/a50cbb9aa4.js"></script>
@@ -50,45 +52,33 @@
                         <a href="agregar_servicio.html" style="color:#212529"><i class="fas fa-plus-circle" id="boton-add"></i></a>
                     </span>
                 </div>
-                <table class="table table-bordered table-sm" id="table-info">
+                <table class="table table-bordered table-sm" id="table-info" name="listar_servicios" method="POST">
                     <thead>
                     <tr>
                         <th style="align-content: center;">ID</th>
                         <th>Nombre del Servicio Extra</th>
                         <th>Descripción</th>
                         <th>Precio</th>
-                        <th>Acciones</th>
+                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+
+                    <?php
+                        $reg_servicios =$sentencia->fetchAll(PDO::FETCH_OBJ);
+
+                        foreach ($reg_servicios as $dato){
+                            ?>
+                            <tr>
+                                <td><?php echo $dato->id_servicio;?></td>
+                                <td><?php echo $dato->nombre_servicio;?></td>
+                                <td><?php echo $dato->desc_servicio;?></td>
+                                <td><?php echo $dato->precio;?></td>
+                            </tr>
+                            <?php
+                        }
+                    ?>
+
                     </tbody>
                 </table>
             </div>
