@@ -14,7 +14,7 @@
     $resultado = $sentencia->execute([$codigo]);
 
     if ($resultado === TRUE) {
-        echo '<p class="error">Registro eliminado exitosamente</p>';
+        echo '<p class="error"Registro eliminado exitósamente</p>';
         header('Location: menu_serv_extras.php');
     } else {
         echo '<p class="error">Algo salió mal. Registro no eliminado</p>';
