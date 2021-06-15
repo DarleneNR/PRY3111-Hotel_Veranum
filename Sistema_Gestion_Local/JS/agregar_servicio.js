@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    $("#form-agregar").validate({
+    $('#form-agregar').validate({
+       
         rules: {
             nombre_serv: { required: true, minlength: 4, maxlength: 150},
             precio_serv: { required: true, min: 1000, maxlength: 400000},
@@ -10,11 +11,18 @@ $(document).ready(function () {
             precio_serv: "El campo Precio es obligatorio.",
             descripcion: "El campo Descripción es obligatorio."
         },
-        errorElement : 'span'
+        errorElement : 'span',
+
+        
+
     });
+    
+    /* $('#agregar').click(function(){
+        $('#confirmarAgregar').show();
+    }); */
 
     //Redirección a página anterior
-    $("#volver").click(function(){
+    $('#volver').click(function(){
         location.href = "menu_serv_extras.php";
     });
 });

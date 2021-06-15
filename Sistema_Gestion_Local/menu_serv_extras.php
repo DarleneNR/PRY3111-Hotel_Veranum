@@ -58,7 +58,7 @@
             <div class="row justify-content-md-center">
                 <div>
                     <span id="add">Agregar nuevo servicio 
-                        <a href="agregar_servicio.html" style="color:#212529"><i class="fas fa-plus-circle" id="boton-add"></i></a>
+                        <a href="agregar_servicio.php" style="color:#212529"><i class="fas fa-plus-circle" id="boton-add"></i></a>
                     </span>
                 </div>
                 <table id="table-info" name="listar_servicios" class="table table-bordered table-hover table-striped" action="" method="POST">

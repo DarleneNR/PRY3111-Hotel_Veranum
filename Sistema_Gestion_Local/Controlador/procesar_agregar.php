@@ -30,12 +30,15 @@ if (isset($_POST['agregar_servicio'])) {
         $result = $query->execute();
 
         if ($result === TRUE) {
-            echo '<p class="success">La información ingresada fue registrada con éxito</p>';
+            /* echo '<p class="success">La información ingresada fue registrada con éxito</p>'; */
             header('Location: \PRY3111-Hotel_Veranum\Sistema_Gestion_Local\menu_serv_extras.php');
+            
         } else {
             echo '<p class="error">Algo salió mal. Información no registrada</p>';
             die();
-        }
+        }// Variables para almacenar mensajes
+            /* $_SESSION['mensaje'] = 'La información ingresada fue registrada con éxito';
+            $_SESSION['mensaje_type'] = 'success'; */
     }
 }
 

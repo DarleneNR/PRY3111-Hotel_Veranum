@@ -33,6 +33,14 @@
                     <div class="row justify-content-md-center">
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="row justify-content-md-center">
+                                <!-- Mensaje de confirmación -->
+                                <?php if(isset($_SESSION['mensaje'])) { ?>
+                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <?php $_SESSION['mensaje'] ?>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                <?php } ?>
+
                                 <!-- Campos para el ingreso de datos -->
                                 <div class="col-md-4 col-sm-4 col-xs-4">
                                     <label class="control-label col-xs-6" for="nombre_serv" style="padding-bottom: 45px;">Nombre: </label>
@@ -57,9 +65,31 @@
                             </div>
                             <!-- Fin Campos para el ingreso de datos -->
                             <br><br>
+                            <!-- Botones -->
                             <div class="botones">
                                 <button type="reset" class="btn btn-info" id="volver" name="volver" value="volver">Volver</button>
-                                <button type="submit" class="btn btn-info" id="agregar" name="agregar_servicio" value="agregar_servicio">Agregar</button>
+                                <button type="submit" class="btn btn-primary" id="agregar" name="agregar_servicio" value="agregar_servicio" data-toggle="modal" data-target="#confirmarAgregar">Agregar</button>
+                                <!-- Modal confirmar agregar registro -->
+                                <div class="modal fade" id="confirmarAgregar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Servicios Extras</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ¿Estás seguro de querer agregar la información?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btn btn-primary" id="enviarRegistro">Confirmar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin Modal confirmar agregar registro -->
                             </div>
                         </div>
                     </div>
