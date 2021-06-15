@@ -74,7 +74,6 @@
                     <tbody>
                         <?php
                             $reg_servicios =$sentencia->fetchAll(PDO::FETCH_OBJ);
-
                             foreach ($reg_servicios as $dato){
                                 ?>
                                 <tr>

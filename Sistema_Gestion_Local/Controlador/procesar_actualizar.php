@@ -1,7 +1,7 @@
 <?php
 
     if (!isset($_POST['oculto'])){
-        header('Location: menu_serv_extras.php');
+        header('Location: \PRY3111-Hotel_Veranum\Sistema_Gestion_Local\menu_serv_extras.php');
         exit();
     }
 
@@ -20,6 +20,7 @@
 
     if ($resultado === TRUE) {
         echo '<p class="success">La información ingresada fue registrada con éxito</p>';
+        header('Location: \PRY3111-Hotel_Veranum\Sistema_Gestion_Local\menu_serv_extras.php');
     } else {
         echo '<p class="error">Algo salió mal. Actualización no registrada</p>';
         die();
