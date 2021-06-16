@@ -46,7 +46,7 @@ form div input, textarea {
     margin-bottom: 3px;
 }
 
-div button#volver{
+div button#volver_serv{
     color: rgba(12, 12, 12, 0.849);
     float: right;
     background: #54777e94;
@@ -60,7 +60,7 @@ div button#volver{
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
     height: 35px;
 }
-div button#actualizar{
+div button#actualizar_serv{
     color: rgba(12, 12, 12, 0.849);
     float: right;
     background: #54777e94;
@@ -74,10 +74,10 @@ div button#actualizar{
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
     height: 35px;
 }
-div button#volver:hover {
+div button#volver_serv:hover {
     background: #55948bb9;
 }
-div button#actualizar:hover {
+div button#actualizar_serv:hover {
     background: #55948bb9;
 }
 

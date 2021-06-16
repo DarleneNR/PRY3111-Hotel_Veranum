@@ -19,7 +19,7 @@
                 <div id="title" class="row justify-content-md-center">
                     <h1 class="justify-content-md-center">Agrega un nuevo servicio</h1>
                 </div>
-                <form id="form-agregar" action="/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/Controlador/procesar_agregar_serv.php" name="agregar_servicio" method="POST">
+                <form id="form-agregar-serv" action="/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/Controlador/procesar_agregar_serv.php" name="agregar_servicio" method="POST">
                     <div class="row justify-content-md-center">
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="row justify-content-md-center">
@@ -50,15 +50,15 @@
                                     <label class="control-label col-xs-2" for="descripcion" style="padding-bottom: 45px;">Descripción: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <textarea class="form-control" id="descripcion" name="descripcion" type="text" placeholder="Describe aquí el nuevo servicio" rows="5" minlength="5" required></textarea>
+                                    <textarea style="width:260px;" class="form-control" id="descripcion" name="descripcion" type="text" placeholder="Describe aquí el nuevo servicio" rows="5" minlength="5" required></textarea>
                                 </div>
                             </div>
                             <!-- Fin Campos para el ingreso de datos -->
                             <br><br>
                             <!-- Botones -->
                             <div class="botones">
-                                <button type="reset" class="btn btn-info" id="volver" name="volver" value="volver" >Volver</button>
-                                <button type="submit" class="btn btn-primary" id="agregar" name="agregar_servicio" value="agregar_servicio" data-toggle="modal" data-target="#confirmarAgregar">Agregar</button>
+                                <button type="reset" class="btn btn-info" id="volver_serv" name="volver" value="volver" >Volver</button>
+                                <button type="submit" class="btn btn-primary" id="agregar_serv" name="agregar_servicio" value="agregar_servicio" data-toggle="modal" data-target="#confirmarAgregar">Agregar</button>
                                 <!-- Modal confirmar agregar registro -->
                                 <!-- <div class="modal fade" id="confirmarAgregar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
@@ -108,5 +108,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
-    <script type="text/javascript" src="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\JS\agregar_servicio.js"></script>
+    <script type="text/javascript" src="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\JS\agregar_registro.js"></script>
 </html>

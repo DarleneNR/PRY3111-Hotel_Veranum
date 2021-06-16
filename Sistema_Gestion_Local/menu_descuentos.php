@@ -1,22 +1,23 @@
 <?php
     include('Controlador/connection.php');
 
-    $sentencia = $connection->query("SELECT * FROM servicios_extras");
+    $sentencia = $connection->query("SELECT * FROM habitacion");
 ?>
     
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <meta charset="utf-8">
         <?php include('./header.php'); ?>
-        
+
         <!-- Biblioteca DataTable -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
 
-        <link rel="stylesheet" href="./CSS/menu_serv_extras.css" type="text/css">
+        <link rel="stylesheet" href="./CSS/menu_descuentos.css" type="text/css">
         <link rel="stylesheet" href="./CSS/header.css" type="text/css">
         <link rel="stylesheet" href="./CSS/table_info.css" type="text/css">
-    
-        <title>Servicios Extras - Veranum</title>
+        
+        <title>Descuentos - Veranum</title>
     </head>
     <body>
         <!-- Barra de Menú -->
@@ -24,19 +25,19 @@
         <!-- Fin Barra de Menú -->
 
         <!-- Tabla -->
-        <div class="container " id="info-servicios">
-            <h1>Detalle de Información - Servicios Extras</h1>
+        <div class="container " id="info-descuentos">
+            <h1>Detalle de Información - Descuentos</h1>
             <div class="row justify-content-md-center">
                 <div>
-                    <span id="add">Agregar nuevo servicio 
-                        <a href="Acciones/agregar_servicio.php" style="color:#212529"><i class="fas fa-plus-circle" id="boton-add"></i></a>
+                    <span id="add">Agregar nuevo descuento
+                        <a href="Acciones/agregar_descuento.php" style="color:#212529"><i class="fas fa-plus-circle" id="boton-add"></i></a>
                     </span>
                 </div>
-                <table id="table-info" name="listar_servicios" class="table table-bordered table-hover table-striped" action="" method="POST">
+                <table id="table-info" name="listar_descuentos" class="table table-bordered table-hover table-striped" action="" method="POST">
                     <thead class="thead-light">
                         <tr>
                             <th>ID</th>
-                            <th>Nombre del Servicio Extra</th>
+                            <th>Nombre descuento</th>
                             <th>Descripción</th>
                             <th>Precio</th>
                             <th>Acciones</th>
@@ -44,19 +45,19 @@
                     </thead>
                     <tbody>
                         <?php
-                            $reg_servicios =$sentencia->fetchAll(PDO::FETCH_OBJ);
-                            foreach ($reg_servicios as $dato){
+                            $reg_descuentos =$sentencia->fetchAll(PDO::FETCH_OBJ);
+                            foreach ($reg_descuentos as $dato){
                                 ?>
                                 <tr>
-                                    <td><?php echo $dato->id_servicio;?></td>
-                                    <td><?php echo $dato->nombre_servicio;?></td>
-                                    <td><?php echo $dato->desc_servicio;?></td>
+                                    <td><?php echo $dato->id_habitacion;?></td>
+                                    <td><?php echo $dato->nom_tipo_hab;?></td>
+                                    <td><?php echo $dato->desc_habitacion;?></td>
                                     <td><?php echo $dato->precio;?></td>
                                     <td>
-                                        <a href="Acciones/actualizar_servicio.php?id=<?php echo $dato->id_servicio;?>" style="color:#212529"
-                                        name="actualizar_servicio"><i class="fas fa-pencil-alt"></i></a>  |  
-                                        <a href="Acciones/eliminar_servicio.php?id=<?php echo $dato->id_servicio;?>" style="color:#212529" 
-                                        name="eliminar_servicio"><i class="fas fa-trash-alt"></i></a>
+                                        <a href="Acciones/actualizar_habitacion.php?id=<?php echo $dato->id_habitacion;?>" style="color:#212529"
+                                        name="actualizar_habitacion"><i class="fas fa-pencil-alt"></i></a>  |  
+                                        <a href="Acciones/eliminar_habitacion.php?id=<?php echo $dato->id_habitacion;?>" style="color:#212529" 
+                                        name="eliminar_habitacion"><i class="fas fa-trash-alt"></i></a>
                                     </td>
                                 </tr>
                                 <?php
@@ -83,6 +84,7 @@
 
     <!-- Biblioteca DataTable -->
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+    
+    <script type="text/javascript" src="./JS/menu_descuentos.js"></script>
 
-    <script type="text/javascript" src="./JS/menu_serv_extras.js"></script>
 </html>

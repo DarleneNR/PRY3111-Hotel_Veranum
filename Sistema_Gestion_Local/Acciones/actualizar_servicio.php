@@ -40,7 +40,7 @@
                 <div id="title" class="row justify-content-md-center">
                     <h1 class="justify-content-md-center">Actualización del servicio</h1>
                 </div>
-                <form id="form-actualizar" action="../Controlador/procesar_actualizar_serv.php" name="actualizar_servicio" method="POST">
+                <form id="form-actualizar-serv" action="../Controlador/procesar_actualizar_serv.php" name="actualizar_servicio" method="POST">
                     <div class="row justify-content-md-center">
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="row justify-content-md-center">
@@ -74,8 +74,8 @@
                             <div class="botones">
                                 <input type="hidden" name="oculto">
                                 <input type="hidden" name="id2" value="<?php echo $servicio->id_servicio;?>">
-                                <button type="reset" class="btn btn-info" id="volver" value="">Volver</button>
-                                <button type="submit" class="btn btn-info" id="actualizar">Actualizar</button>
+                                <button type="reset" class="btn btn-info" id="volver_serv" value="">Volver</button>
+                                <button type="submit" class="btn btn-info" id="actualizar_serv">Actualizar</button>
                             </div>
                         </div>
                     </div>
@@ -104,5 +104,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
-    <script type="text/javascript" src="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\JS\actualizar_servicio.js"></script>
+    <script type="text/javascript" src="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\JS\actualizar_registro.js"></script>
 </html>

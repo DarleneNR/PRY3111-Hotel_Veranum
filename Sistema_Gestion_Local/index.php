@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <?php include('./header.php'); ?>
 
         <link rel="stylesheet" href="./CSS/index.css" type="text/css">
+        <link rel="stylesheet" href="./CSS/header.css" type="text/css">
+        <link rel="stylesheet" href="./CSS/table_info.css" type="text/css">
 
         <title>Inicio - Veranum</title>
     </head>
     <body>
         <!-- Barra de Menú -->
-        <header class="navbar-light shadow-sm">
-            <ul>
-                <li><a href="index.html" style="text-decoration:none;">Inicio</a></li>
-                <li><a href="#" style="text-decoration:none;">Reservar</a></li>
-                <li><a href="#" style="text-decoration:none;">Mantenedores <span class="fa fa-angle-down"></span></a>
-                    <ul class="sub-menu">
-                        <li><a href="menu_serv_extras.php" style="margin-bottom:-20px;margin-left:-80px;color:#242629b9;font-size:15px;">Menú Servicios Extras</a></li>
-                        <li><a href="menu_habitaciones.php" style="margin-bottom:-20px;margin-left:-80px;color:#242629b9;font-size:15px;">Menú Habitaciones</a></li>
-                        <li><a href="#" style="margin-bottom:-20px;margin-left:-80px;color:#242629b9;font-size:15px;">Menú Descuentos</a></li>
-                        <li><a href="#" style="margin-left:-80px;color: #242629b9;font-size:15px;">Menú Promociones</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" style="text-decoration: none;">Otros</a></li>
-            </ul>
-        </header>
+        <?php include('./barra_menu.php'); ?>
         <!-- Fin Barra de Menú -->
 
         <!-- Contenido -->

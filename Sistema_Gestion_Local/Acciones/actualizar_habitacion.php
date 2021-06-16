@@ -74,8 +74,8 @@
                             <div class="botones">
                                 <input type="hidden" name="oculto">
                                 <input type="hidden" name="id2" value="<?php echo $habitacion->id_habitacion;?>">
-                                <button type="reset" class="btn btn-info" id="volver" value="">Volver</button>
-                                <button type="submit" class="btn btn-info" id="actualizar">Actualizar</button>
+                                <button type="reset" class="btn btn-info" id="volver_hab" value="">Volver</button>
+                                <button type="submit" class="btn btn-info" id="actualizar_hab">Actualizar</button>
                             </div>
                         </div>
                     </div>
@@ -104,5 +104,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
-    <script type="text/javascript" src="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\JS\actualizar_habitacion.js"></script>
+    <script type="text/javascript" src="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\JS\actualizar_registro.js"></script>
 </html>
