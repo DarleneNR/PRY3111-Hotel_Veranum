@@ -15,11 +15,8 @@
         <!-- Fin Barra de Menú -->
 
         <!-- Contenido -->
-        <div class="container">
-            <h2>Aquí va el contenido de Inicio </h2>
-        </div>
-
-        <div class="container">
+        <div class="container" style="padding:50px;">
+            <h2>Aquí va el contenido de Inicio</h2>
             <table class="table">
             <thead>
                 <tr>
