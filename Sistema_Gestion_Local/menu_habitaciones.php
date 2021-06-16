@@ -1,7 +1,7 @@
 <?php
     include('Controlador/connection.php');
 
-    $sentencia = $connection->query("SELECT * FROM servicios_extras");
+    $sentencia = $connection->query("SELECT * FROM habitacion");
 ?>
     
 <!DOCTYPE html>
@@ -20,9 +20,9 @@
         <!-- Biblioteca DataTable -->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
 
-        <link rel="stylesheet" href="./CSS/menu_serv_extras.css" type="text/css">
+        <link rel="stylesheet" href="./CSS/menu_habitaciones.css" type="text/css">
 
-        <title>Servicios Extras - Veranum</title>
+        <title>Habitaciones - Veranum</title>
     </head>
     <body>
         <!-- Barra de Menú -->
@@ -44,19 +44,19 @@
         <!-- Fin Barra de Menú -->
 
         <!-- Tabla -->
-        <div class="container " id="info-servicios">
-            <h1>Detalle de Información - Servicios Extras</h1>
+        <div class="container " id="info-habitaciones">
+            <h1>Detalle de Información - Habitaciones</h1>
             <div class="row justify-content-md-center">
                 <div>
-                    <span id="add">Agregar nuevo servicio 
-                        <a href="Acciones/agregar_servicio.php" style="color:#212529"><i class="fas fa-plus-circle" id="boton-add"></i></a>
+                    <span id="add">Agregar nuevo tipo de habitación
+                        <a href="Acciones/agregar_habitacion.php" style="color:#212529"><i class="fas fa-plus-circle" id="boton-add"></i></a>
                     </span>
                 </div>
-                <table id="table-info" name="listar_servicios" class="table table-bordered table-hover table-striped" action="" method="POST">
+                <table id="table-info" name="listar_habitaciones" class="table table-bordered table-hover table-striped" action="" method="POST">
                     <thead class="thead-light">
                         <tr>
                             <th>ID</th>
-                            <th>Nombre del Servicio Extra</th>
+                            <th>Tipo de habitación</th>
                             <th>Descripción</th>
                             <th>Precio</th>
                             <th>Acciones</th>
@@ -68,15 +68,15 @@
                             foreach ($reg_servicios as $dato){
                                 ?>
                                 <tr>
-                                    <td><?php echo $dato->id_servicio;?></td>
-                                    <td><?php echo $dato->nombre_servicio;?></td>
-                                    <td><?php echo $dato->desc_servicio;?></td>
+                                    <td><?php echo $dato->id_habitacion;?></td>
+                                    <td><?php echo $dato->nom_tipo_hab;?></td>
+                                    <td><?php echo $dato->desc_habitacion;?></td>
                                     <td><?php echo $dato->precio;?></td>
                                     <td>
-                                        <a href="Acciones/actualizar_servicio.php?id=<?php echo $dato->id_servicio;?>" style="color:#212529"
-                                        name="actualizar_servicio"><i class="fas fa-pencil-alt"></i></a>  |  
-                                        <a href="Acciones/eliminar_servicio.php?id=<?php echo $dato->id_servicio;?>" style="color:#212529" 
-                                        name="eliminar_servicio"><i class="fas fa-trash-alt"></i></a>
+                                        <a href="Acciones/actualizar_habitacion.php?id=<?php echo $dato->id_habitacion;?>" style="color:#212529"
+                                        name="actualizar_habitacion"><i class="fas fa-pencil-alt"></i></a>  |  
+                                        <a href="Acciones/eliminar_habitacion.php?id=<?php echo $dato->id_habitacion;?>" style="color:#212529" 
+                                        name="eliminar_habitacion"><i class="fas fa-trash-alt"></i></a>
                                     </td>
                                 </tr>
                                 <?php
@@ -104,11 +104,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https:/kit.fontawesome.com/a50cbb9aa4.js"></script>
-    
+
     <!-- <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
 
     <!-- Biblioteca DataTable -->
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
-
-    <script type="text/javascript" src="./JS/menu_serv_extras.js"></script>
+    
+    <script type="text/javascript" src="./JS/menu_habitaciones.js"></script>
 </html>

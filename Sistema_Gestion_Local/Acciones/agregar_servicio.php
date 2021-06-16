@@ -7,18 +7,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <!-- Agregados -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https:/kit.fontawesome.com/a50cbb9aa4.js"></script>
-        
-        <!-- Validación con librerias -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
-        <link rel="stylesheet" href="./CSS/agregar_servicio.css" type="text/css">
-        <script type="text/javascript" src="./JS/agregar_servicio.js"></script>
+        <link rel="stylesheet" href="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\CSS\agregar_servicio.css" type="text/css">
 
         <title>Agregar servicio extra</title>
     </head>
@@ -29,7 +19,7 @@
                 <div id="title" class="row justify-content-md-center">
                     <h1 class="justify-content-md-center">Agrega un nuevo servicio</h1>
                 </div>
-                <form id="form-agregar" action="./Controlador/procesar_agregar.php" name="agregar_servicio" method="POST">
+                <form id="form-agregar" action="/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/Controlador/procesar_agregar_serv.php" name="agregar_servicio" method="POST">
                     <div class="row justify-content-md-center">
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="row justify-content-md-center">
@@ -67,10 +57,10 @@
                             <br><br>
                             <!-- Botones -->
                             <div class="botones">
-                                <button type="reset" class="btn btn-info" id="volver" name="volver" value="volver">Volver</button>
+                                <button type="reset" class="btn btn-info" id="volver" name="volver" value="volver" >Volver</button>
                                 <button type="submit" class="btn btn-primary" id="agregar" name="agregar_servicio" value="agregar_servicio" data-toggle="modal" data-target="#confirmarAgregar">Agregar</button>
                                 <!-- Modal confirmar agregar registro -->
-                                <div class="modal fade" id="confirmarAgregar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <!-- <div class="modal fade" id="confirmarAgregar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -88,7 +78,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- Fin Modal confirmar agregar registro -->
                             </div>
                         </div>
@@ -109,4 +99,14 @@
             </div>
         </div>
     </boody>
+    <!-- Agregados -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https:/kit.fontawesome.com/a50cbb9aa4.js"></script>
+    <!-- Validación con librerias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\JS\agregar_servicio.js"></script>
 </html>

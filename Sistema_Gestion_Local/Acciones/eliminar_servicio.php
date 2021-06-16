@@ -6,7 +6,7 @@
 
     $codigo = $_GET['id'];
 
-    include('Controlador/connection.php');
+    include('C:\xampp\htdocs\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\Controlador\connection.php');
     session_start();
 
     /*  Captando el id para obtener los datos de registro completo */
@@ -15,7 +15,7 @@
 
     if ($resultado === TRUE) {
         echo '<p class="error"Registro eliminado exitósamente</p>';
-        header('Location: menu_serv_extras.php');
+        header('Location: \PRY3111-Hotel_Veranum\Sistema_Gestion_Local\menu_serv_extras.php');
     } else {
         echo '<p class="error">Algo salió mal. Registro no eliminado</p>';
         die();
