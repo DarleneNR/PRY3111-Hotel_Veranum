@@ -34,7 +34,7 @@ $(document).ready(function () {
     });
     //Redirección a página anterior
     $('#volver_hab').click(function(){
-        location.href = "/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/menu_descuentos.php";
+        location.href = "/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/menu_habitaciones.php";
     });
 
     /* Descuentos */

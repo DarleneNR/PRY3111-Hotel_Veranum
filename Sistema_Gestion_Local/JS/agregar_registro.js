@@ -32,6 +32,11 @@ $(document).ready(function () {
         },
         errorElement : 'span',
     });
+    //Confirmar añadir registro
+    /* $('#agregar_hab').click(function(){
+        $('#confirmarAgregar').modal('show');
+    }); */
+
     //Redirección a página anterior
     $('#volver_hab').click(function(){
         location.href = "/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/menu_habitaciones.php";
@@ -57,10 +62,6 @@ $(document).ready(function () {
     $('#volver_desc').click(function(){
         location.href = "/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/menu_descuentos.php";
     });
-
-
-
-
 
     /* $('#agregar-').click(function(){
         $('#confirmarAgregar').show();
