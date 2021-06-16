@@ -1,7 +1,7 @@
 <?php
     include('Controlador/connection.php');
 
-    $sentencia = $connection->query("SELECT * FROM habitacion");
+    $sentencia = $connection->query("SELECT * FROM descuentos");
 ?>
     
 <!DOCTYPE html>
@@ -37,9 +37,10 @@
                     <thead class="thead-light">
                         <tr>
                             <th>ID</th>
-                            <th>Nombre descuento</th>
-                            <th>Descripción</th>
-                            <th>Precio</th>
+                            <th>Nombre descriptivo</th>
+                            <th>Porcentaje equiv.</th>
+                            <th>Fecha inicio disponibilidad</th>
+                            <th>Fecha término disponibilidad</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -49,15 +50,17 @@
                             foreach ($reg_descuentos as $dato){
                                 ?>
                                 <tr>
-                                    <td><?php echo $dato->id_habitacion;?></td>
-                                    <td><?php echo $dato->nom_tipo_hab;?></td>
-                                    <td><?php echo $dato->desc_habitacion;?></td>
-                                    <td><?php echo $dato->precio;?></td>
+                                    <td><?php echo $dato->id_descuento;?></td>
+                                    <td><?php echo $dato->nom_tipo_desc;?></td>
+                                    <td><?php echo $dato->porc_desc;?></td>
+                                    <!-- <td>echo $dato->estado_desc;</td> -->
+                                    <td><?php echo $dato->fecha_ini_desc;?></td>
+                                    <td><?php echo $dato->fecha_fin_desc;?></td>
                                     <td>
-                                        <a href="Acciones/actualizar_habitacion.php?id=<?php echo $dato->id_habitacion;?>" style="color:#212529"
-                                        name="actualizar_habitacion"><i class="fas fa-pencil-alt"></i></a>  |  
-                                        <a href="Acciones/eliminar_habitacion.php?id=<?php echo $dato->id_habitacion;?>" style="color:#212529" 
-                                        name="eliminar_habitacion"><i class="fas fa-trash-alt"></i></a>
+                                        <a href="Acciones/actualizar_descuento.php?id=<?php echo $dato->id_descuento;?>" style="color:#212529"
+                                        name="actualizar_descuento"><i class="fas fa-pencil-alt"></i></a>  |  
+                                        <a href="Acciones/eliminar_descuento.php?id=<?php echo $dato->id_descuento;?>" style="color:#212529" 
+                                        name="eliminar_descuento"><i class="fas fa-trash-alt"></i></a>
                                     </td>
                                 </tr>
                                 <?php

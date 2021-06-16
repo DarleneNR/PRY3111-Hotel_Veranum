@@ -49,10 +49,10 @@
                                 
                                 <!-- Fin Consulta -->
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-6" for="nombre_serv" style="padding-bottom: 45px;">Nombre: </label>
+                                    <label class="control-label col-xs-6" for="ac_nombre_serv" style="padding-bottom: 45px;">Nombre: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" id="nombre_serv" name="ac_nombre_serv" type="text" value="<?php echo $servicio->nombre_servicio;?>" minlength="5"/>
+                                    <input class="form-control" id="ac_nombre_serv" name="ac_nombre_serv" type="text" value="<?php echo $servicio->nombre_servicio;?>" minlength="5"/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
@@ -66,7 +66,7 @@
                                     <label class="control-label col-xs-2" for="ac_descripcion" style="padding-bottom: 45px;">Descripción: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <textarea style="width:260px;" class="form-control" id="descripcion" name="ac_descripcion" type="text" value="" rows="5" cols="30" minlength="5"><?php echo $servicio->desc_servicio;?></textarea>
+                                    <textarea style="width:260px;" class="form-control" id="ac_descripcion" name="ac_descripcion" type="text" value="" rows="5" cols="30" minlength="5"><?php echo $servicio->desc_servicio;?></textarea>
                                 </div>
                             </div>
                             <!-- Fin Campos para el ingreso de datos -->

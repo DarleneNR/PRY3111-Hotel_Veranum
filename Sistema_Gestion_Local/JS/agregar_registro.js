@@ -38,7 +38,29 @@ $(document).ready(function () {
     });
 
     /* Descuentos */
-    
+    $('#form-agregar-desc').validate({
+        rules: {
+            nombre_desc: { required: true, minlength: 4, maxlength: 150},
+            porc_desc: { required: true, min: 0.999, maxlength: 100},
+            fecha_ini_desc: { required: true, minlength: 5, maxlength: 300},
+            fecha_fin_desc: { required: true, minlength: 5, maxlength: 300},
+        },
+        messages: {
+            nombre_desc: "El campo Nombre es obligatorio.",
+            porc_desc: "El campo Porcentaje es obligatorio.",
+            fecha_ini_desc: "El campo Fecha Inicio es obligatorio.",
+            fecha_fin_desc: "El campo Fecha Término es obligatorio.",
+        },
+        errorElement : 'span',
+    });
+    //Redirección a página anterior
+    $('#volver_desc').click(function(){
+        location.href = "/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/menu_descuentos.php";
+    });
+
+
+
+
 
     /* $('#agregar-').click(function(){
         $('#confirmarAgregar').show();

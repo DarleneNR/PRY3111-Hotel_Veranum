@@ -3,7 +3,7 @@
     padding: 45px 35px;
 }
 
-.frame-actualizar {
+.frame-agregar {
     background-color: rgba(235, 237, 241, 0.548);
     box-shadow: 0px 1px rgba(60, 61, 61, 0.815);
     align-content: center;
@@ -25,7 +25,7 @@
     padding-bottom: 40px;
     text-align: center;
 }
-#form-actualizar {
+#form-agregar {
     padding-top: 30px;
     font-family: "Microsoft YaHei";
     color: rgb(34, 34, 34);
@@ -60,7 +60,7 @@ div button#volver_desc {
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
     height: 35px;
 }
-div button#actualizar_desc {
+div button#agregar_desc {
     color: rgba(12, 12, 12, 0.849);
     float: right;
     background: #54777e94;
@@ -77,7 +77,7 @@ div button#actualizar_desc {
 div button#volver_desc:hover {
     background: #55948bb9;
 }
-div button#actualizar_desc:hover {
+div button#agregar_desc:hover {
     background: #55948bb9;
 }
 
@@ -96,8 +96,8 @@ div button#actualizar_desc:hover {
     top: 13px;
 }
 
-/* Validación de Formulario de actualización*/
-label#nombre_hab-error.error,label#precio_hab-error.error,label#descripcion-error.error {
+/* Validación de Formulario */
+label#nombre_desc-error.error,label#porc_desc-error.error,label#fecha_ini_desc-error.error,label#fecha_fin_desc-error.error {
     color: rgba(136, 28, 28, 0.966);
     font-size: 16px;
     font-weight: bold;

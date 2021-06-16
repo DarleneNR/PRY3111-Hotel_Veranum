@@ -207,10 +207,10 @@ $(document).ready(function() {
                 });
             })
         }
-    });
+    }); */
 
-    // Estilos personalizados
+    // Estilos personaizados
     $('#table-info').styleTable({
         
-    }); */
+    });
 });
