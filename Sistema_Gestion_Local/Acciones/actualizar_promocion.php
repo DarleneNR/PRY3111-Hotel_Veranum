@@ -31,7 +31,7 @@
 
         <link rel="stylesheet" href="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\CSS\actualizar_promocion.css" type="text/css">
 
-        <title>Actualizar promocion extra</title>
+        <title>Actualizar promoción extra</title>
     </head>
     <body>
         <!-- Formulario -->

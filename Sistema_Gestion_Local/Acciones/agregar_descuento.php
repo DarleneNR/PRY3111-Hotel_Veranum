@@ -36,14 +36,14 @@
                                     <label class="control-label col-xs-6" for="nombre_desc" style="padding-bottom: 45px;">Nombre: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" id="nombre_desc" name="nombre_desc" type="text" placeholder="Nombre descriptivo del descuento" minlength="5" required/>
+                                    <input class="form-control" id="nombre_desc" name="nombre_desc" type="text" placeholder="Nombre descriptivo" minlength="5" required/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
                                     <label class="control-label col-xs-2" for="porc_desc" style="padding-bottom: 45px;">Porcentaje: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" id="porc_desc" name="porc_desc" type="number" placeholder="Costo diario" minlength=" 0.999" required/>
+                                    <input class="form-control" id="porc_desc" name="porc_desc" type="number" placeholder="Porcentaje de descuento" minlength=" 0.999" required/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">

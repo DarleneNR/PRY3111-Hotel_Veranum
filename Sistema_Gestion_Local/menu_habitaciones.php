@@ -38,8 +38,8 @@
                         <tr>
                             <th>ID</th>
                             <th>Tipo de habitación</th>
-                            <th>Descripción</th>
                             <th>Precio</th>
+                            <th>Descripción</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -50,9 +50,9 @@
                                 ?>
                                 <tr>
                                     <td><?php echo $dato->id_habitacion;?></td>
-                                    <td><?php echo $dato->nom_tipo_hab;?></td>
-                                    <td><?php echo $dato->desc_habitacion;?></td>
-                                    <td><?php echo $dato->precio;?></td>
+                                    <td><?php echo ucfirst($dato->nom_tipo_hab);?></td>
+                                    <td>$<?php echo $dato->precio;?></td>
+                                    <td><?php echo ucfirst($dato->desc_habitacion);?></td>
                                     <td>
                                         <a href="Acciones/actualizar_habitacion.php?id=<?php echo $dato->id_habitacion;?>" style="color:#212529"
                                         name="actualizar_habitacion"><i class="fas fa-pencil-alt"></i></a>  |  

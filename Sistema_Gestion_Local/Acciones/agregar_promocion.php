@@ -2,14 +2,14 @@
 
     include('../Controlador/connection.php');
 
-    $id = $_GET['id'];
+    /* $id = $_GET['id']; */
 
     /*  Captando el id para obtener los datos de registro completo */
-    $sentencia = $connection->prepare("SELECT * FROM promocion WHERE id_promocion = ?;");
+    /* $sentencia = $connection->prepare("SELECT * FROM promocion WHERE id_promocion = ?;");
     $sentencia->execute([$id]);
-
+ */
     /* Comenzando actualización */
-    $promocion = $sentencia->fetch(PDO::FETCH_OBJ);
+    /* $promocion = $sentencia->fetch(PDO::FETCH_OBJ); */
     /* $sentencia = $connection->prepare("SELECT * FROM promocion WHERE id_promocion = 'id'");
     $resultado = mysqli_query($connection, $sentencia); */
 
@@ -24,7 +24,7 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\CSS\agregar_promociones.css" type="text/css">
+        <link rel="stylesheet" href="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\CSS\agregar_promocion.css" type="text/css">
 
         <title>Agregar promocion</title>
     </head>
@@ -49,32 +49,38 @@
 
                                 <!-- Campos para el ingreso de datos -->
                                 <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <label class="control-label col-xs-6" for="nom_prom" style="padding-bottom: 45px;">Nombre: </label>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <input class="form-control" id="nom_prom" name="nom_prom" type="text" minlength="5" placeholder="Nombre descriptivo" required/>
+                                </div>
+                                <br><br>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
                                     <label class="control-label col-xs-6" for="precio_min" style="padding-bottom: 45px;">Pago minimo: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" id="precio_min" name="precio_min" type="number" minlength="4" required/>
+                                    <input class="form-control" id="precio_min" name="precio_min" type="number" minlength="4" required placeholder="1000"/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
                                     <label class="control-label col-xs-2" for="precio_max" style="padding-bottom: 45px;">Pago maximo: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" id="precio_max" name="precio_max" type="number" minlength="4" required/>
+                                    <input class="form-control" id="precio_max" name="precio_max" type="number" minlength="4" required placeholder="2000"/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
                                     <label class="control-label col-xs-2" for="cant_porc" style="padding-bottom: 45px;">Cantidad de porcentaje: </label>
                                 </div>
-                                </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                     <input class="form-control" id="cant_porc" name="cant_porc" type="number" minlength="1"/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-2" for="descripcion" style="padding-bottom: 45px;">Descripción: </label>
+                                    <label class="control-label col-xs-2" for="comentario" style="padding-bottom: 45px;">Comentarios: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <textarea style="width:260px;" class="form-control" id="descripcion" name="descripcion" type="text" placeholder="Describe aquí el nuevo servicio" rows="5" minlength="5" required></textarea>
+                                    <textarea style="width:260px;" class="form-control" id="comentario" name="comentario" type="text" placeholder="Escribe aquí algún comentario a considerar" rows="5" minlength="5"></textarea>
                                 </div>
                             </div>
                             <!-- Fin Campos para el ingreso de datos -->
@@ -82,7 +88,6 @@
                             <!-- Botones -->
                             <div class="botones">
                             <input type="hidden" name="oculto">
-                                <input type="hidden" name="id_add" value="<?php echo $promocion->id_promocion;?>">
                                 <button type="reset" class="btn btn-info" id="volver_prom" name="volver" value="volver" >Volver</button>
                                 <button type="submit" class="btn btn-primary" id="agregar_prom" name="agregar_promocion" value="agregar_promocion" data-toggle="modal" data-target="#confirmarAgregar">Agregar</button>
                                 <!-- Modal confirmar agregar registro -->

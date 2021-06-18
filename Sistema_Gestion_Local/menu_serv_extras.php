@@ -37,8 +37,8 @@
                         <tr>
                             <th>ID</th>
                             <th>Nombre del Servicio Extra</th>
-                            <th>Descripción</th>
                             <th>Precio</th>
+                            <th>Descripción</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -49,9 +49,9 @@
                                 ?>
                                 <tr>
                                     <td><?php echo $dato->id_servicio;?></td>
-                                    <td><?php echo $dato->nombre_servicio;?></td>
-                                    <td><?php echo $dato->desc_servicio;?></td>
-                                    <td><?php echo $dato->precio;?></td>
+                                    <td><?php echo ucfirst($dato->nombre_servicio);?></td>
+                                    <td>$<?php echo $dato->precio;?></td>
+                                    <td><?php echo ucfirst($dato->desc_servicio);?></td>
                                     <td>
                                         <a href="Acciones/actualizar_servicio.php?id=<?php echo $dato->id_servicio;?>" style="color:#212529"
                                         name="actualizar_servicio"><i class="fas fa-pencil-alt"></i></a>  |  

@@ -37,8 +37,10 @@
                     <thead class="thead-light">
                         <tr>
                             <th>ID</th>
+                            <th>Nombre</th>
                             <th>Rango de precios</th>
-                            <th>Descripción</th>
+                            <th>Porcentaje</th>
+                            <th>Comentarios</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -49,8 +51,10 @@
                                 ?>
                                 <tr>
                                     <td><?php echo $dato->id_promocion;?></td>
-                                    <td><?php echo $dato->pago_minimo;?> - <?php echo $dato->pago_maximo;?> </td>
-                                    <td><?php echo $dato->descripcion;?></td>
+                                    <td><?php echo ucfirst($dato->nombre_prom);?></td>
+                                    <td>$<?php echo $dato->pago_minimo;?> - $<?php echo $dato->pago_maximo;?> </td>
+                                    <td><?php echo $dato->porc_promocion;?>%</td>
+                                    <td><?php echo ucfirst($dato->comentario);?></td>
                                     <td>
                                         <a href="Acciones/actualizar_promocion.php?id=<?php echo $dato->id_promocion;?>" style="color:#212529"
                                         name="actualizar_promocion"><i class="fas fa-pencil-alt"></i></a>  |  

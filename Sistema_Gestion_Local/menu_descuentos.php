@@ -51,11 +51,13 @@
                                 ?>
                                 <tr>
                                     <td><?php echo $dato->id_descuento;?></td>
-                                    <td><?php echo $dato->nom_tipo_desc;?></td>
-                                    <td><?php echo $dato->porc_desc;?></td>
+                                    <td><?php echo ucfirst($dato->nom_tipo_desc);?></td>
+                                    <td><?php echo $dato->porc_desc;?>%</td>
                                     <!-- <td>echo $dato->estado_desc;</td> -->
-                                    <td><?php echo $dato->fecha_ini_desc;?></td>
-                                    <td><?php echo $dato->fecha_fin_desc;?></td>
+                                    <?php $fecha_formato1 = date_create($dato->fecha_ini_desc);?>
+                                    <td><?php echo date_format($fecha_formato1,'d-m-Y');?></td>
+                                    <?php $fecha_formato2 = date_create($dato->fecha_fin_desc);?>
+                                    <td><?php echo date_format($fecha_formato2,'d-m-Y');?></td>
                                     <td>
                                         <a href="Acciones/actualizar_descuento.php?id=<?php echo $dato->id_descuento;?>" style="color:#212529"
                                         name="actualizar_descuento"><i class="fas fa-pencil-alt"></i></a>  |  

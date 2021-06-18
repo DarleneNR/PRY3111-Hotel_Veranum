@@ -1,31 +1,35 @@
 <?php
 
+include('connection.php');
+session_start();
+
 if (isset($_POST['agregar_promocion'])) {
 
     // Aquí se está captando los datos ingresados en los campos mencionados
-    $id_add = $_POST['id_add'];
+    $nom_prom = ucfirst(trim($_POST['nom_prom']));
     $precio_min = $_POST['precio_min'];
     $precio_max = $_POST['precio_max'];
     $cant_porc = $_POST['cant_porc'];
-    $descripcion = $_POST['descripcion'];
+    $comentario = ucfirst(trim($_POST['comentario']));
 
     // Aquí se consulta si el id existe en la DB 
-    $query = $connection->prepare("SELECT * FROM promocion WHERE ID_PROMOCION=:id_add");
-    $query->bindParam("id_add", $id_add, PDO::PARAM_STR);
+    $query = $connection->prepare("SELECT * FROM promocion WHERE NOMBRE_PROM=:nombre_promocion");
+    $query->bindParam("nombre_promocion", $nom_prom, PDO::PARAM_STR);
     $query->execute();
 
     // Si el nombre del servicio existe entonces se muestra el mensaje de error
     if ($query->rowCount() > 0) {
-        echo '<p class="error">La promocion ingresada ya esta registrada!</p>';
+        echo '<p class="error">La promocion ingresada ya está registrada!</p>';
     }
 
     // Si el nombre del servicio no existe entonces se muestra el mensaje 
     if ($query->rowCount() == 0) {
-        $query = $connection->prepare("INSERT INTO promocion(PAGO_MINIMO,PAGO_MAXIMO,DESCRIPCION,PORC_PROMOCION) VALUES (:pago_min,:pago_max,:descripcion,:porc_prom)");
+        $query = $connection->prepare("INSERT INTO promocion(NOMBRE_PROM,PAGO_MINIMO,PAGO_MAXIMO,PORC_PROMOCION,COMENTARIO) VALUES (:nom_prom,:pago_min,:pago_max,:porc_prom,:comentario)");
+        $query->bindParam("nom_prom", $nom_prom, PDO::PARAM_STR);
         $query->bindParam("pago_min", $precio_min, PDO::PARAM_STR);
         $query->bindParam("pago_max", $precio_max, PDO::PARAM_STR);
-        $query->bindParam("descripcion", $descripcion, PDO::PARAM_STR);
         $query->bindParam("porc_prom", $cant_porc, PDO::PARAM_STR);
+        $query->bindParam("comentario", $comentario, PDO::PARAM_STR);
         $result = $query->execute();
 
         if ($result === TRUE) {

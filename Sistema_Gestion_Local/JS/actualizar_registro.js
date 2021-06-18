@@ -40,10 +40,10 @@ $(document).ready(function () {
     /* Descuentos */
     $('#form-actualizar-desc').validate({
         rules: {
-            nombre_desc: { required: true, minlength: 4, maxlength: 150},
-            porc_desc: { required: true, min: 0.999, maxlength: 100},
-            fecha_ini_desc: { required: true, minlength: 5, maxlength: 300},
-            fecha_fin_desc: { required: true, minlength: 5, maxlength: 300},
+            ac_nombre_desc: { required: true, minlength: 4, maxlength: 150},
+            ac_porc_desc: { required: true, min: 0.999, maxlength: 100},
+            ac_fecha_ini_desc: { required: true, minlength: 5, maxlength: 300},
+            ac_fecha_fin_desc: { required: true, minlength: 5, maxlength: 300},
         },
         messages: {
             nombre_desc: "El campo Nombre es obligatorio.",
@@ -57,7 +57,8 @@ $(document).ready(function () {
     $('#volver_desc').click(function(){
         location.href = "/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/menu_descuentos.php";
     });
-// Promociones
+
+    /* Promociones */
     $('#form-actualizar-prom').validate({
         rules: {
             ac_precio_min: {min: 4, maxlength: 150},
@@ -72,7 +73,7 @@ $(document).ready(function () {
         errorElement : 'span',
     });
     //Redirección a página anterior
-    $('#volver_desc').click(function(){
+    $('#volver_prom').click(function(){
         location.href = "/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/menu_promociones.php";
     });
 });
