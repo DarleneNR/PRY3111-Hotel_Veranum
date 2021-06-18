@@ -1,7 +1,7 @@
 <?php
     include('Controlador/connection.php');
 
-    $sentencia = $connection->query("SELECT * FROM habitacion");
+    $sentencia = $connection->query("SELECT * FROM promocion");
 ?>
     
 <!DOCTYPE html>
@@ -30,7 +30,7 @@
             <div class="row justify-content-md-center">
                 <div>
                     <span id="add">Agregar nuevo tipo de promocion
-                        <a href="Acciones/agregar_promociones.php" style="color:#212529"><i class="fas fa-plus-circle" id="boton-add"></i></a>
+                        <a href="Acciones/agregar_promocion.php" style="color:#212529"><i class="fas fa-plus-circle" id="boton-add"></i></a>
                     </span>
                 </div>
                 <table id="table-info" name="listar_promociones" class="table table-bordered table-hover table-striped" action="" method="POST">
