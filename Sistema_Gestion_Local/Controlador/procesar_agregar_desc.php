@@ -34,7 +34,6 @@ if (isset($_POST['agregar_descuento'])) {
         if ($result === TRUE) {
             /* echo '<p class="success">La información ingresada fue registrada con éxito</p>'; */
             header('Location: \PRY3111-Hotel_Veranum\Sistema_Gestion_Local\menu_descuentos.php');
-            
         } else {
             echo '<p class="error">Algo salió mal. Información no registrada</p>';
             die();
