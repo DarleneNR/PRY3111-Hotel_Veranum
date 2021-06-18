@@ -1,0 +1,109 @@
+.i-body {
+    background: #fff;
+    padding: 45px 35px;
+}
+
+.frame-actualizar {
+    background-color: rgba(235, 237, 241, 0.548);
+    box-shadow: 0px 1px rgba(60, 61, 61, 0.815);
+    align-content: center;
+    margin: 11px;
+    padding: 25px 20px;
+    margin-left: 10%;
+    width: 80%;
+    border: 2px solid #8b8b99d2;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+/* Formulario */
+#title {
+    font-family: "Bahnschrift SemiBold";
+    color: rgb(17, 17, 17);
+    padding-top: 15px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+#form-actualizar {
+    padding-top: 30px;
+    font-family: "Microsoft YaHei";
+    color: rgb(34, 34, 34);
+    align-content: center;
+}
+
+label {
+    font-family: "Bahnschrift";
+    color: rgb(32, 32, 32);
+    padding-top: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form div input, textarea {
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+div button#volver_desc {
+    color: rgba(12, 12, 12, 0.849);
+    float: right;
+    background: #54777e94;
+    margin-right: 150px;
+    margin-top: -20px;
+    border: thin solid rgb(70, 69, 69);
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    height: 35px;
+}
+div button#actualizar_desc {
+    color: rgba(12, 12, 12, 0.849);
+    float: right;
+    background: #54777e94;
+    margin-right: -185px;
+    margin-top: -20px;
+    border: thin solid rgb(70, 69, 69);
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    height: 35px;
+}
+div button#volver_desc:hover {
+    background: #55948bb9;
+}
+div button#actualizar_desc:hover {
+    background: #55948bb9;
+}
+
+/* Pie de página */
+#pie-footer {
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+.titulo-footer {
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    top: 13px;
+}
+
+/* Validación de Formulario de actualización*/
+label#nombre_hab-error.error,label#precio_hab-error.error,label#descripcion-error.error {
+    color: rgba(136, 28, 28, 0.966);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+span.error{ 
+    color: red; 
+    font-size: 0.7em;
+}
