@@ -49,24 +49,30 @@
                                 
                                 <!-- Fin Consulta -->
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-6" for="ac_nombre_prom" style="padding-bottom: 45px;">Nombre: </label>
+                                    <label class="control-label col-xs-6" for="ac_precio_min" style="padding-bottom: 45px;">Precio minimo: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" id="ac_nombre_prom" name="ac_nombre_prom" type="text" value="<?php echo $promocion->nombre_promocion;?>" minlength="5"/>
+                                    <input class="form-control" id="ac_precio_min" name="ac_precio_min" type="number" value="<?php echo $promocion->pago_minimo;?>" minlength="4"/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-2" for="ac_precio_prom" style="padding-bottom: 45px;">Precio: </label>
+                                    <label class="control-label col-xs-2" for="ac_precio_max" style="padding-bottom: 45px;">Precio maximo: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" id="precio_prom" name="ac_precio_prom" type="number" value="<?php echo $promocion->precio;?>" minlength="4"/>
+                                    <input class="form-control" id="ac_precio_max" name="ac_precio_max" type="number" value="<?php echo $promocion->pago_maximo;?>" minlength="4"/>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <label class="control-label col-xs-2" for="ac_cant_porc" style="padding-bottom: 45px;">Cantidad de porcentaje: </label>
                                 </div>
-                                    <br><br>
+                                </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <input class="form-control" id="ac_cant_porc" name="ac_cant_porc" type="number" value="<?php echo $promocion->porc_promocion;?>" minlength="1"/>
+                                </div>
+                                <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
                                     <label class="control-label col-xs-2" for="ac_descripcion" style="padding-bottom: 45px;">Descripción: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <textarea style="width:260px;" class="form-control" id="ac_descripcion" name="ac_descripcion" type="text" value="" rows="5" cols="30" minlength="5"><?php echo $promocion->desc_promocion;?></textarea>
+                                    <textarea style="width:260px;" class="form-control" id="ac_descripcion" name="ac_descripcion" type="text" value="" rows="5" cols="30" minlength="5"><?php echo $promocion->descripcion;?></textarea>
                                 </div>
                             </div>
                             <!-- Fin Campos para el ingreso de datos -->

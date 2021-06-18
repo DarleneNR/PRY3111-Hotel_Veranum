@@ -52,9 +52,9 @@
                                     <td><?php echo $dato->pago_minimo;?> - <?php echo $dato->pago_maximo;?> </td>
                                     <td><?php echo $dato->descripcion;?></td>
                                     <td>
-                                        <a href="Acciones/actualizar_promociones.php?id=<?php echo $dato->id_promociones;?>" style="color:#212529"
-                                        name="actualizar_promociones"><i class="fas fa-pencil-alt"></i></a>  |  
-                                        <a href="Acciones/eliminar_promociones.php?id=<?php echo $dato->id_promociones;?>" style="color:#212529" 
+                                        <a href="Acciones/actualizar_promocion.php?id=<?php echo $dato->id_promocion;?>" style="color:#212529"
+                                        name="actualizar_promocion"><i class="fas fa-pencil-alt"></i></a>  |  
+                                        <a href="Acciones/eliminar_promocion.php?id=<?php echo $dato->id_promocion;?>" style="color:#212529" 
                                         name="eliminar_promociones"><i class="fas fa-trash-alt"></i></a>
                                     </td>
                                 </tr>

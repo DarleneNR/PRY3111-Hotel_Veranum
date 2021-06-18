@@ -1,3 +1,19 @@
+<?php
+
+    include('../Controlador/connection.php');
+
+    $id = $_GET['id'];
+
+    /*  Captando el id para obtener los datos de registro completo */
+    $sentencia = $connection->prepare("SELECT * FROM promocion WHERE id_promocion = ?;");
+    $sentencia->execute([$id]);
+
+    /* Comenzando actualización */
+    $promocion = $sentencia->fetch(PDO::FETCH_OBJ);
+    /* $sentencia = $connection->prepare("SELECT * FROM promocion WHERE id_promocion = 'id'");
+    $resultado = mysqli_query($connection, $sentencia); */
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -47,6 +63,14 @@
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <label class="control-label col-xs-2" for="cant_porc" style="padding-bottom: 45px;">Cantidad de porcentaje: </label>
+                                </div>
+                                </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <input class="form-control" id="cant_porc" name="cant_porc" type="number" minlength="1"/>
+                                </div>
+                                <br><br>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
                                     <label class="control-label col-xs-2" for="descripcion" style="padding-bottom: 45px;">Descripción: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
@@ -57,6 +81,8 @@
                             <br><br>
                             <!-- Botones -->
                             <div class="botones">
+                            <input type="hidden" name="oculto">
+                                <input type="hidden" name="id_add" value="<?php echo $promocion->id_promocion;?>">
                                 <button type="reset" class="btn btn-info" id="volver_prom" name="volver" value="volver" >Volver</button>
                                 <button type="submit" class="btn btn-primary" id="agregar_prom" name="agregar_promocion" value="agregar_promocion" data-toggle="modal" data-target="#confirmarAgregar">Agregar</button>
                                 <!-- Modal confirmar agregar registro -->
