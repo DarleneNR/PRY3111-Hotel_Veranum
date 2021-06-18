@@ -59,7 +59,7 @@
                                         <a href="Acciones/actualizar_promocion.php?id=<?php echo $dato->id_promocion;?>" style="color:#212529"
                                         name="actualizar_promocion"><i class="fas fa-pencil-alt"></i></a>  |  
                                         <a href="Acciones/eliminar_promocion.php?id=<?php echo $dato->id_promocion;?>" style="color:#212529" 
-                                        name="eliminar_promociones"><i class="fas fa-trash-alt"></i></a>
+                                        name="eliminar_promocion"><i class="fas fa-trash-alt"></i></a>
                                     </td>
                                 </tr>
                                 <?php
@@ -87,6 +87,5 @@
     <!-- Biblioteca DataTable -->
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
     
-    <script type="text/javascript" src="./JS/menu_habitaciones.js"></script>
-
+    <script type="text/javascript" src="./JS/menu_promociones.js"></script>
 </html>

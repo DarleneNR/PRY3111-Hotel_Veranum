@@ -50,8 +50,8 @@ div button#volver_hab {
     color: rgba(12, 12, 12, 0.849);
     float: right;
     background: #54777e94;
-    margin-right: 150px;
-    margin-top: -20px;
+    margin-right: 118px;
+    margin-top: -22px;
     border: thin solid rgb(70, 69, 69);
     text-decoration: none;
     cursor: pointer;
@@ -65,7 +65,7 @@ div button#agregar_hab {
     float: right;
     background: #54777e94;
     margin-right: -185px;
-    margin-top: -20px;
+    margin-top: -22px;
     border: thin solid rgb(70, 69, 69);
     text-decoration: none;
     cursor: pointer;

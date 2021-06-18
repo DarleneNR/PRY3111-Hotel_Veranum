@@ -46,7 +46,7 @@ form div input, textarea {
     margin-bottom: 3px;
 }
 
-div button#volver_desc {
+div button#volver_prom {
     color: rgba(12, 12, 12, 0.849);
     float: right;
     background: #54777e94;
@@ -60,7 +60,7 @@ div button#volver_desc {
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
     height: 35px;
 }
-div button#actualizar_desc {
+div button#actualizar_prom {
     color: rgba(12, 12, 12, 0.849);
     float: right;
     background: #54777e94;
@@ -74,10 +74,10 @@ div button#actualizar_desc {
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
     height: 35px;
 }
-div button#volver_desc:hover {
+div button#volver_prom:hover {
     background: #55948bb9;
 }
-div button#actualizar_desc:hover {
+div button#actualizar_prom:hover {
     background: #55948bb9;
 }
 
@@ -97,7 +97,7 @@ div button#actualizar_desc:hover {
 }
 
 /* Validación de Formulario de actualización*/
-label#nombre_hab-error.error,label#precio_hab-error.error,label#descripcion-error.error {
+label#nombre_hab-error.error,label#precio_hab-error.error,label#promripcion-error.error {
     color: rgba(136, 28, 28, 0.966);
     font-size: 16px;
     font-weight: bold;

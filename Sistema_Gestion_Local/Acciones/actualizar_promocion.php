@@ -38,7 +38,7 @@
         <div class="i-body">
             <div class="frame-actualizar">
                 <div id="title" class="row justify-content-md-center">
-                    <h1 class="justify-content-md-center">Actualización de la promocion</h1>
+                    <h1 class="justify-content-md-center">Actualización de la promoción</h1>
                 </div>
                 <form id="form-actualizar-prom" action="../Controlador/procesar_actualizar_prom.php" name="actualizar_promocion" method="POST">
                     <div class="row justify-content-md-center">
@@ -48,6 +48,13 @@
                                 <!-- Consulta -->
                                 
                                 <!-- Fin Consulta -->
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <label class="control-label col-xs-6" for="ac_nom_prom" style="padding-bottom: 45px;">Nombre: </label>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <input class="form-control" id="ac_nom_prom" name="ac_nom_prom" type="text" value="<?php echo $promocion->nombre_prom;?>" minlength="5"/>
+                                </div>
+                                <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
                                     <label class="control-label col-xs-6" for="ac_precio_min" style="padding-bottom: 45px;">Precio minimo: </label>
                                 </div>
@@ -60,19 +67,20 @@
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
                                     <input class="form-control" id="ac_precio_max" name="ac_precio_max" type="number" value="<?php echo $promocion->pago_maximo;?>" minlength="4"/>
+                                </div>
+                                <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-2" for="ac_cant_porc" style="padding-bottom: 45px;">Cantidad de porcentaje: </label>
+                                    <label class="control-label col-xs-2" for="ac_cant_porc" style="padding-bottom: 45px;margin-left:-3px;">Cantidad porcentaje: </label>
                                 </div>
-                                </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
                                     <input class="form-control" id="ac_cant_porc" name="ac_cant_porc" type="number" value="<?php echo $promocion->porc_promocion;?>" minlength="1"/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-2" for="ac_descripcion" style="padding-bottom: 45px;">Descripción: </label>
+                                    <label class="control-label col-xs-2" for="ac_comentario" style="padding-bottom: 45px;">Descripción: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <textarea style="width:260px;" class="form-control" id="ac_descripcion" name="ac_descripcion" type="text" value="" rows="5" cols="30" minlength="5"><?php echo $promocion->descripcion;?></textarea>
+                                    <textarea style="width:260px;" class="form-control" id="ac_comentario" name="ac_comentario" type="text" value="" rows="5" cols="30" minlength="4"><?php echo $promocion->comentario;?></textarea>
                                 </div>
                             </div>
                             <!-- Fin Campos para el ingreso de datos -->

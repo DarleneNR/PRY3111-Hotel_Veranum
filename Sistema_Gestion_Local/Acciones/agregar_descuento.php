@@ -56,7 +56,7 @@
                                 <div class="col-md-4 col-sm-4 col-xs-4">
                                     <label class="control-label col-xs-2" for="fecha_fin_desc" style="padding-bottom: 45px;">Fecha de término: </label>
                                 </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                <div class="col-md-6 col-sm-6 col-xs-6" id="fecha_fin">
                                     <input class="form-control" id="fecha_fin_desc" name="fecha_fin_desc" type="date" required></input>
                                 </div>
                                 </div>

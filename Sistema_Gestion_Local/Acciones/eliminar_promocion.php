@@ -10,7 +10,7 @@
     session_start();
 
     /*  Captando el id para obtener los datos de registro completo */
-    $sentencia = $connection->prepare("DELETE FROM promociones WHERE id_promocion = ?;");
+    $sentencia = $connection->prepare("DELETE FROM promocion WHERE id_promocion = ?;");
     $resultado = $sentencia->execute([$codigo]);
 
     if ($resultado === TRUE) {
