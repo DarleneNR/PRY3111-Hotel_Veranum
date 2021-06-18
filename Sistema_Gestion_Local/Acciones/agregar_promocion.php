@@ -10,7 +10,7 @@
 
         <link rel="stylesheet" href="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\CSS\agregar_promocion.css" type="text/css">
 
-        <title>Agregar promocion extra</title>
+        <title>Agregar promocion</title>
     </head>
     <body>
         <!-- Formulario -->
@@ -19,7 +19,7 @@
                 <div id="title" class="row justify-content-md-center">
                     <h1 class="justify-content-md-center">Agrega una nueva promocion</h1>
                 </div>
-                <form id="form-agregar-serv" action="/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/Controlador/procesar_agregar_prom.php" name="agregar_promocion" method="POST">
+                <form id="form-agregar-prom" action="/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/Controlador/procesar_agregar_prom.php" name="agregar_promocion" method="POST">
                     <div class="row justify-content-md-center">
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="row justify-content-md-center">

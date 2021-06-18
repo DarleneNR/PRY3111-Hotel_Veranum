@@ -9,12 +9,12 @@
     $id = $_GET['id'];
 
     /*  Captando el id para obtener los datos de registro completo */
-    $sentencia = $connection->prepare("SELECT * FROM promocion_extras WHERE id_promocion = ?;");
+    $sentencia = $connection->prepare("SELECT * FROM promocion WHERE id_promocion = ?;");
     $sentencia->execute([$id]);
 
     /* Comenzando actualización */
     $promocion = $sentencia->fetch(PDO::FETCH_OBJ);
-    /* $sentencia = $connection->prepare("SELECT * FROM promocion_extras WHERE id_promocion = 'id'");
+    /* $sentencia = $connection->prepare("SELECT * FROM promocion WHERE id_promocion = 'id'");
     $resultado = mysqli_query($connection, $sentencia); */
 
 ?>
