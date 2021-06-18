@@ -49,9 +49,9 @@
                             foreach ($reg_servicios as $dato){
                                 ?>
                                 <tr>
-                                    <td><?php echo $dato->id_promociones;?></td>
-                                    <td><?php echo $dato->nom_tipo_hab;?></td>
-                                    <td><?php echo $dato->desc_promociones;?></td>
+                                    <td><?php echo $dato->id_prom;?></td>
+                                    <td><?php echo $dato->nom_tipo_prom;?></td>
+                                    <td><?php echo $dato->desc_prom;?></td>
                                     <td><?php echo $dato->precio;?></td>
                                     <td>
                                         <a href="Acciones/actualizar_promociones.php?id=<?php echo $dato->id_promociones;?>" style="color:#212529"
