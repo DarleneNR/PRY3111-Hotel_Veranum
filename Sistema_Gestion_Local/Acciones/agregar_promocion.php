@@ -8,7 +8,7 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\CSS\agregar_promocion.css" type="text/css">
+        <link rel="stylesheet" href="\PRY3111-Hotel_Veranum\Sistema_Gestion_Local\CSS\agregar_promociones.css" type="text/css">
 
         <title>Agregar promocion</title>
     </head>
@@ -33,17 +33,17 @@
 
                                 <!-- Campos para el ingreso de datos -->
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-6" for="nombre_prom" style="padding-bottom: 45px;">Nombre: </label>
+                                    <label class="control-label col-xs-6" for="precio_min" style="padding-bottom: 45px;">Pago minimo: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" id="nombre_prom" name="nombre_prom" type="text" placeholder="Nombre de la promocion" minlength="5" required/>
+                                    <input class="form-control" id="precio_min" name="precio_min" type="number" minlength="4" required/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-2" for="precio_prom" style="padding-bottom: 45px;">Precio: </label>
+                                    <label class="control-label col-xs-2" for="precio_max" style="padding-bottom: 45px;">Pago maximo: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" id="precio_prom" name="precio_prom" type="number" placeholder="Costo diario" minlength="4"   Z required/>
+                                    <input class="form-control" id="precio_max" name="precio_max" type="number" minlength="4" required/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">

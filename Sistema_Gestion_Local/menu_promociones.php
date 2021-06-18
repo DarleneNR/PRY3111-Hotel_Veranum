@@ -37,22 +37,20 @@
                     <thead class="thead-light">
                         <tr>
                             <th>ID</th>
-                            <th>Tipo de Promocion</th>
+                            <th>Rango de precios</th>
                             <th>Descripción</th>
-                            <th>Precio</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                            $reg_servicios =$sentencia->fetchAll(PDO::FETCH_OBJ);
-                            foreach ($reg_servicios as $dato){
+                            $reg_promociones =$sentencia->fetchAll(PDO::FETCH_OBJ);
+                            foreach ($reg_promociones as $dato){
                                 ?>
                                 <tr>
-                                    <td><?php echo $dato->id_prom;?></td>
-                                    <td><?php echo $dato->nom_tipo_prom;?></td>
-                                    <td><?php echo $dato->desc_prom;?></td>
-                                    <td><?php echo $dato->precio;?></td>
+                                    <td><?php echo $dato->id_promocion;?></td>
+                                    <td><?php echo $dato->pago_minimo;?> - <?php echo $dato->pago_maximo;?> </td>
+                                    <td><?php echo $dato->descripcion;?></td>
                                     <td>
                                         <a href="Acciones/actualizar_promociones.php?id=<?php echo $dato->id_promociones;?>" style="color:#212529"
                                         name="actualizar_promociones"><i class="fas fa-pencil-alt"></i></a>  |  
