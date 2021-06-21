@@ -13,7 +13,7 @@ try {
     $connection = new PDO("mysql:host=".HOST.";dbname=".DATABASE, USER, PASSWORD,
     array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 } catch (PDOException $e) {
-    exit("Error: No se pudo conectar a la DB " . $e->getMessage());
+    exit("Hubo un problema con la conexión: " . $e->getMessage());
     die(mysql_error());
     mysql_close($connection);
 }

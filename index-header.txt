@@ -1,0 +1,694 @@
+{% comment %} <header class="header" id="frame-panel">
+      <a href="https://www.templatemonster.com/es/paginas-de-aterrizaje-tipo-77088.html" class="back-to-product">
+        <span class="back-to-product-icon"></span>
+        Peak - Plantilla de página de destino HTML limpia de una página de hoteles
+      </a>
+      <div class="devices devices-static" id="devices" data-translations="{&quot;desktop&quot;:&quot;Escritorio&quot;,&quot;tablet&quot;:&quot;Tableta&quot;,&quot;smartphone&quot;:&quot;M\u00f3vil&quot;}">
+        <button type="button" class="device-btn device-btn_smartphone" title="Móvil">
+          <svg class="device-btn-icon">
+            <use xlink:href="/assets/images/sprite-svg-33b3d1a63fa2cf75867cd39fbfbe8495.svg#device-smartphone-usage"></use>
+          </svg>
+        </button>
+        <button type="button" class="device-btn device-btn_tablet" title="Tableta">
+          <svg class="device-btn-icon">
+            <use xlink:href="/assets/images/sprite-svg-33b3d1a63fa2cf75867cd39fbfbe8495.svg#device-tablet-usage"></use>
+          </svg>
+        </button>
+        <button type="button" class="device-btn device-btn_desktop device-btn_active" title="Escritorio">
+          <svg class="device-btn-icon">
+            <use xlink:href="/assets/images/sprite-svg-33b3d1a63fa2cf75867cd39fbfbe8495.svg#device-desktop-usage"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="header-buttons">
+        <a href="https://monsterone.com/tm-membership/77088?tmaff=rockthemes" target="_blank" rel="noopener" class="header-btn header-btn_membership">
+          <svg class="header-btn-icon">
+            <use xlink:href="/assets/images/sprite-svg-33b3d1a63fa2cf75867cd39fbfbe8495.svg#monsterEye"></use>
+          </svg>
+          Obtener descargas ilimitadas
+        </a>
+        <div class="add-to-cart" id="add-to-cart" data-translations="{&quot;label&quot;:&quot;A\u00f1adir al carrito&quot;,&quot;servicesTitle&quot;:&quot;Servicios populares para este producto&quot;}" data-product-id="77088" data-licenses="[{&quot;type&quot;:&quot;regular&quot;,&quot;modifier&quot;:{&quot;type&quot;:&quot;amount&quot;,&quot;value&quot;:0,&quot;operation&quot;:&quot;addition&quot;},&quot;id&quot;:19,&quot;items&quot;:[],&quot;isDefault&quot;:1,&quot;translates&quot;:{&quot;title&quot;:&quot;Licencia De Un Solo&quot;},&quot;prices&quot;:{&quot;regular&quot;:13,&quot;regularLabel&quot;:&quot;13\u00a0\u20ac&quot;,&quot;discount&quot;:13,&quot;discountLabel&quot;:&quot;13\u00a0\u20ac&quot;},&quot;gee&quot;:{&quot;variant&quot;:&quot;regular + 19&quot;}},{&quot;type&quot;:&quot;virtual&quot;,&quot;modifier&quot;:{&quot;type&quot;:&quot;amount&quot;,&quot;value&quot;:0,&quot;operation&quot;:&quot;addition&quot;},&quot;id&quot;:5,&quot;items&quot;:[{&quot;namespace&quot;:&quot;services&quot;,&quot;id&quot;:&quot;1563&quot;,&quot;price&quot;:69}],&quot;isDefault&quot;:0,&quot;translates&quot;:{&quot;title&quot;:&quot;Licencia de desarrollador&quot;},&quot;prices&quot;:{&quot;regular&quot;:71,&quot;regularLabel&quot;:&quot;71\u00a0\u20ac&quot;,&quot;discount&quot;:71,&quot;discountLabel&quot;:&quot;71\u00a0\u20ac&quot;},&quot;gee&quot;:{&quot;variant&quot;:&quot;regular + 5&quot;}}]" data-services="[{&quot;id&quot;:388,&quot;translates&quot;:{&quot;title&quot;:&quot;P\u00e1gina de aterrizaje lista para usar&quot;},&quot;prices&quot;:{&quot;regular&quot;:167,&quot;regularLabel&quot;:&quot;167\u00a0\u20ac&quot;,&quot;discount&quot;:117,&quot;discountLabel&quot;:&quot;117\u00a0\u20ac&quot;},&quot;gee&quot;:{&quot;name&quot;:&quot;Offer&quot;,&quot;id&quot;:388,&quot;price&quot;:1.39,&quot;brand&quot;:&quot;TT&quot;,&quot;category&quot;:&quot;TT: Landing Page : Ready-To-Use Landing Page&quot;,&quot;variant&quot;:&quot;premium&quot;,&quot;position&quot;:1,&quot;list&quot;:&quot;Cross-page - Offers&quot;}},{&quot;id&quot;:389,&quot;translates&quot;:{&quot;title&quot;:&quot;Conversi\u00f3n a Wordpress&quot;},&quot;prices&quot;:{&quot;regular&quot;:335,&quot;regularLabel&quot;:&quot;335\u00a0\u20ac&quot;,&quot;discount&quot;:269,&quot;discountLabel&quot;:&quot;269\u00a0\u20ac&quot;},&quot;gee&quot;:{&quot;name&quot;:&quot;Offer&quot;,&quot;id&quot;:389,&quot;price&quot;:3.2,&quot;brand&quot;:&quot;TT&quot;,&quot;category&quot;:&quot;TT: Landing Page Templates: Converting To WordPress&quot;,&quot;variant&quot;:&quot;premium&quot;,&quot;position&quot;:2,&quot;list&quot;:&quot;Cross-page - Offers&quot;}},{&quot;id&quot;:1003,&quot;translates&quot;:{&quot;title&quot;:&quot;Plugins Esenciales&quot;},&quot;prices&quot;:{&quot;regular&quot;:71,&quot;regularLabel&quot;:&quot;71\u00a0\u20ac&quot;,&quot;discount&quot;:66,&quot;discountLabel&quot;:&quot;66\u00a0\u20ac&quot;},&quot;gee&quot;:{&quot;name&quot;:&quot;Offer&quot;,&quot;id&quot;:1003,&quot;price&quot;:0.79,&quot;brand&quot;:&quot;TT&quot;,&quot;category&quot;:&quot;TT: WP Landing Page: Must-Have Plugins&quot;,&quot;variant&quot;:&quot;premium&quot;,&quot;position&quot;:3,&quot;list&quot;:&quot;Cross-page - Offers&quot;}},{&quot;id&quot;:897,&quot;translates&quot;:{&quot;title&quot;:&quot;GDPR Suite  - Nuevas reglas de privacidad de la UE&quot;},&quot;prices&quot;:{&quot;regular&quot;:41,&quot;regularLabel&quot;:&quot;41\u00a0\u20ac&quot;,&quot;discount&quot;:41,&quot;discountLabel&quot;:&quot;41\u00a0\u20ac&quot;},&quot;gee&quot;:{&quot;name&quot;:&quot;Offer&quot;,&quot;id&quot;:897,&quot;price&quot;:0.49,&quot;brand&quot;:&quot;Zemez&quot;,&quot;category&quot;:&quot;TM: Website&amp;Landing: GDPR &amp; CCPA Compliance - New Privacy Rules&quot;,&quot;variant&quot;:&quot;premium&quot;,&quot;position&quot;:4,&quot;list&quot;:&quot;Cross-page - Offers&quot;}}]" data-paid-supports="{&quot;isIncludeBasicSupport&quot;:true,&quot;items&quot;:[{&quot;id&quot;:11085,&quot;translates&quot;:{&quot;title&quot;:&quot;Obtenga 6 meses m\u00e1s de soporte y ahorre 5\u00a0\u20ac&quot;,&quot;description&quot;:&quot;Con el producto, obtendr\u00e1 6 meses de soporte del autor. Para m\u00e1s info, por favor, consulte la <a href=\&quot;https:\/\/www.templatemonster.com\/support-policy\/\&quot; target=\&quot;_blank\&quot;>pol\u00edtica de soporte<\/a>.&quot;},&quot;prices&quot;:{&quot;regular&quot;:9,&quot;regularLabel&quot;:&quot;9\u00a0\u20ac&quot;,&quot;discount&quot;:4,&quot;discountLabel&quot;:&quot;4\u00a0\u20ac&quot;},&quot;gee&quot;:{&quot;name&quot;:&quot;Offer&quot;,&quot;id&quot;:11085,&quot;price&quot;:0.05,&quot;brand&quot;:&quot;TM&quot;,&quot;category&quot;:&quot;paid support&quot;,&quot;variant&quot;:&quot;premium&quot;,&quot;position&quot;:1,&quot;list&quot;:&quot;Cross-page - Paid Support&quot;}}]}" data-free="{&quot;enable&quot;:false}" data-product-gee="{&quot;name&quot;:&quot;Landing page template&quot;,&quot;id&quot;:77088,&quot;price&quot;:0.16,&quot;brand&quot;:&quot;para P\u00e1gina de Aterrizaje&quot;,&quot;category&quot;:&quot;hotel reviews templates&quot;,&quot;variant&quot;:&quot;premium&quot;,&quot;list&quot;:&quot;Cross-page&quot;}">
+          <button type="button" class="header-btn header-btn_cart">
+            <svg class="header-btn-icon">
+              <use xlink:href="/assets/images/sprite-svg-33b3d1a63fa2cf75867cd39fbfbe8495.svg#cart-usage"></use>
+            </svg> Añadir al carrito
+          </button>
+        </div>
+        <div class="favorite" id="favorite" data-template="77088" data-title="Añadir a favoritos" data-active-title="Eliminar de favoritos">
+          <button type="button" class="product-set-favorite btn  btn_icon" title="Añadir a favoritos">
+            <svg class="product-set-favorite-icon btn-icon">
+              <use xlink:href="/assets/images/sprite-svg-33b3d1a63fa2cf75867cd39fbfbe8495.svg#heart-usage"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="frame-toggler" id="frame-toggler" data-translations="{&quot;label&quot;:&quot;Ocultar panel&quot;}">
+          <button type="button" class="frame-toggler-btn" title="Ocultar panel">
+            <span class="frame-toggler-btn-icon"></span>
+          </button>
+        </div>
+      </div>
+      </header> {% endcomment %}
+      
+
+
+
+     {% comment %}  Head {% endcomment %}
+      <!-- <link rel="canonical" href="https://www.templatemonsterpreview.com/es/demo/77088.html">
+        <meta property="og:url" content="https://www.templatemonsterpreview.com/es/demo/77088.html">
+        <meta http-equiv="x-dns-prefetch-control" content="on">
+        <meta name="msapplication-TileColor" content="#2196f3">
+        <meta name="msapplication-TileImage" content="https://s3sf.tmimgcdn.com/mstile-144x144.png">
+        <meta name="msapplication-config" content="https://s3sf.tmimgcdn.com/browserconfig.xml">
+
+        <meta name="theme-color" content="#2196f3">
+        <meta property="og:site_name" content="TemplateMonster">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="templatemonster">
+        <meta name="twitter:creator" content="templatemonster"> -->
+
+        <!-- Google Tag Manager -->
+        <script type="text/javascript" async="" src="https://bat.bing.com/bat.js"></script>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script>
+        <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+        <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-P3B33MM&amp;t=gtm4&amp;cid=1107267058.1620971612"></script>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-FTPYEGT5LY&amp;l=dataLayer&amp;cx=c"></script>
+
+        <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MS2BNB"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MS2BNB');</script>
+        <!-- End Google Tag Manager -->
+
+        <link href="//www.templatemonster.com/assets/css/demo-26d1285daa693707be9e.css" rel="stylesheet">
+        <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/990429972/?random=1624295491393&amp;cv=9&amp;fst=1624295491393&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=2505059651&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=1&amp;u_tz=-240&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wg6g0&amp;sendb=1&amp;ig=1&amp;data=dynx_pagetype%3Dother&amp;frm=0&amp;url=https%3A%2F%2Fwww.templatemonsterpreview.com%2Fes%2Fdemo%2F77088.html%3F_gl%3D1*6buosq*_ga*MTEwNzI2NzA1OC4xNjIwOTcxNjEy*_ga_FTPYEGT5LY*MTYyNDI5NTI0Ni40LjEuMTYyNDI5NTQ4MS42MA..%26_ga%3D2.193866094.294896254.1624295248-1107267058.1620971612&amp;tiba=Demo%20de%20Plantilla%20%2377088&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+        <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/990429972/?random=1624295495161&amp;cv=9&amp;fst=1624295495161&amp;num=1&amp;value=16&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=2505059651&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=1&amp;u_tz=-240&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wg6g0&amp;sendb=1&amp;ig=1&amp;data=dynx_itemid%3D77088%3Bdynx_pagetype%3Dhome%3Bdynx_totalvalue%3D16%3Bevent%3Dview_item%3Bgoogle_business_vertical%3Dretail%3Bid%3D77088&amp;frm=0&amp;url=https%3A%2F%2Fwww.templatemonsterpreview.com%2Fes%2Fdemo%2F77088.html%3F_gl%3D1*6buosq*_ga*MTEwNzI2NzA1OC4xNjIwOTcxNjEy*_ga_FTPYEGT5LY*MTYyNDI5NTI0Ni40LjEuMTYyNDI5NTQ4MS42MA..%26_ga%3D2.193866094.294896254.1624295248-1107267058.1620971612&amp;tiba=Demo%20de%20Plantilla%20%2377088&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+        <script src="https://bat.bing.com/p/action/4076283.js" type="text/javascript" async=""></script>
+        <script async="" type="text/javascript" src="https://cdn.livechatinc.com/tracking.js"></script>
+      {% comment %}  Fin Head {% endcomment %}
+
+      <!-- Loading... -->
+        <div class="preloader loaded">
+            <div class="preloader-body">
+                <div class="cssload-container">
+                    <div class="cssload-speeding-wheel"></div>
+                </div>
+                <p>Loading...</p>
+            </div>
+        </div>
+        <!-- Fin Loading... -->
+        
+      <div class="page animated" style="animation-duration: 500ms;">
+            <!-- Page Header-->
+            <header class="section page-header" id="home">
+            <!-- RD Navbar-->
+            <div class="rd-navbar-wrap" style="height: 0px;"> 
+                <nav class="rd-navbar rd-navbar-aside rd-navbar-original rd-navbar-fixed" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                <div class="rd-navbar-main-outer">
+                    <div class="rd-navbar-main">
+                        <!-- RD Navbar Panel-->
+                        <div class="rd-navbar-panel">
+                            <!-- RD Navbar Toggle-->
+                            <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                                <span></span>
+                            </button>
+                            <!-- RD Navbar Brand-->
+                            <div class="rd-navbar-brand">
+                                <a href="index.html">
+                                    <img class="brand-logo-light" src="images/logo-inverse-123x55.png" alt="" width="123" height="55" srcset="images/logo-inverse-246x110.png 2x">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="block-right">
+                            <div class="rd-navbar-nav-wrap toggle-original-elements">
+                                <!-- RD Navbar Nav-->
+                                <ul class="rd-navbar-nav">
+                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="#about">About</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="#rooms">Rooms</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="#menu">Menu</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="#gallery">Gallery</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="#news">News</a></li>
+                                </ul>
+                            </div>
+                            <a class="button button-white-outline button-style-1 rd-navbar-fixed-element-2" href="#" data-custom-scroll-to="#booking" data-custom-scroll-offset="-80" data-custom-scroll-duration="500">
+                                <span class="icon mdi mdi-pencil"></span>
+                            </a>
+                        </div>
+                        <button class="rd-navbar-toggle-2 rd-navbar-fixed-element-1 toggle-original" data-rd-navbar-toggle=".rd-navbar-offers">
+                            <span></span>
+                        </button>
+                        <div class="rd-navbar-offers toggle-original-elements">
+                            <h3>Best Offers</h3>
+                            <!-- Owl Carousel-->
+                            <div class="owl-carousel owl-loaded owl-drag" data-items="1" data-loop="true" data-autoplay="true" data-dots="true" style="">
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage" style="transform: translate3d(-446px, 0px, 0px); transition: all 0s ease 0s; width: 1561px;">
+                                        <div class="owl-item cloned" style="width: 223px;">
+                                            <div class="team-minimal">
+                                                <div class="team-minimal-figure">
+                                                    <img src="images/room-minimal-3-370x395.jpg" alt="" width="370" height="395">
+                                                        <a class="button button-primary" href="#">Book now</a>
+                                                </div>
+                                                <div class="team-minimal-caption">
+                                                    <h4><a class="team-name" href="#">Family Room</a></h4>
+                                                    <p>$40\per night</p>
+                      </div>
+                    </div></div><div class="owl-item cloned" style="width: 223px;"><div class="team-minimal">
+                      <div class="team-minimal-figure"><img src="images/room-minimal-1-370x395.jpg" alt="" width="370" height="395"><a class="button button-primary" href="#">Book now</a>
+                      </div>
+                      <div class="team-minimal-caption">
+                        <h4><a class="team-name" href="#">Suite</a></h4>
+                        <p>$90\per night</p>
+                      </div>
+                    </div></div><div class="owl-item active" style="width: 223px;"><div class="team-minimal">
+                      <div class="team-minimal-figure"><img src="images/room-minimal-2-370x395.jpg" alt="" width="370" height="395"><a class="button button-primary" href="#">Book now</a>
+                      </div>
+                      <div class="team-minimal-caption">
+                        <h4><a class="team-name" href="#">Double Room</a></h4>
+                        <p>$60\per night</p>
+                      </div>
+                    </div></div><div class="owl-item" style="width: 223px;"><div class="team-minimal">
+                      <div class="team-minimal-figure"><img src="images/room-minimal-3-370x395.jpg" alt="" width="370" height="395"><a class="button button-primary" href="#">Book now</a>
+                      </div>
+                      <div class="team-minimal-caption">
+                        <h4><a class="team-name" href="#">Family Room</a></h4>
+                        <p>$40\per night</p>
+                      </div>
+                    </div></div><div class="owl-item" style="width: 223px;"><div class="team-minimal">
+                      <div class="team-minimal-figure"><img src="images/room-minimal-1-370x395.jpg" alt="" width="370" height="395"><a class="button button-primary" href="#">Book now</a>
+                      </div>
+                      <div class="team-minimal-caption">
+                        <h4><a class="team-name" href="#">Suite</a></h4>
+                        <p>$90\per night</p>
+                      </div>
+                    </div></div><div class="owl-item cloned" style="width: 223px;"><div class="team-minimal">
+                      <div class="team-minimal-figure"><img src="images/room-minimal-2-370x395.jpg" alt="" width="370" height="395"><a class="button button-primary" href="#">Book now</a>
+                      </div>
+                      <div class="team-minimal-caption">
+                        <h4><a class="team-name" href="#">Double Room</a></h4>
+                        <p>$60\per night</p>
+                      </div>
+                    </div></div><div class="owl-item cloned" style="width: 223px;"><div class="team-minimal">
+                      <div class="team-minimal-figure"><img src="images/room-minimal-3-370x395.jpg" alt="" width="370" height="395"><a class="button button-primary" href="#">Book now</a>
+                      </div>
+                      <div class="team-minimal-caption">
+                        <h4><a class="team-name" href="#">Family Room</a></h4>
+                        <p>$40\per night</p>
+                      </div>
+                    </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                  <ul class="list-contacts">
+                    <li>9 Valley St. Brooklyn, NY 11203</li>
+                    <li><a href="tel:#">1-800-346-6277</a></li>
+                  </ul>
+                  <ul class="list-inline header-soc-list">
+                    <li><a class="icon fa-facebook" href="#"></a></li>
+                    <li><a class="icon fa-instagram" href="#"></a></li>
+                    <li><a class="icon fa-twitter" href="#"></a></li>
+                    <li><a class="icon fa-youtube-play" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Swiper-->
+      <section class="section section-lg section-main-bunner section-main-bunner-filter">
+        <div class="main-bunner-img" style="background-image: url(&quot;images/bg-bunner-2.jpg&quot;); background-size: cover;"></div>
+        <div class="main-bunner-inner">
+          <div class="container">
+            <div class="row row-50 justify-content-lg-center align-items-lg-center">
+              <div class="col-lg-12">
+                <div class="bunner-content-modern text-center">
+                  <h1 class="text-uppercase">Welcome</h1>
+                  <div class="star-section offset-top-60"><span class="icon mdi-star"></span><span class="icon mdi-star"></span><span class="icon mdi-star"></span><span class="icon mdi-star"></span><span class="icon mdi-star"></span></div>
+                  <p>Peak  is one of the best luxury hotels in our state. We offer high-quality accommodation with a wide variety of rooms, additional services, and amenities available to all our guests.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-transform-top bg-gray-light">
+        <div class="container">
+          <div class="box-countdown-dark" id="booking">
+            <div class="row row-30 justify-content-xl-between justify-content-start align-content-lg-center align-content-start">
+              <div class="col-xl-3 col-md-6 col-12">
+                <div class="form-wrap form-date form-devider"><span>Arrival</span>
+                  <label class="form-label form-label-outside rd-input-label" for="rd-arrival-time"></label>
+                  <input class="form-input" id="rd-arrival-time" type="text" name="time" data-time-picker="time, date" placeholder="Check-in date" data-dtp="dtp_ySiRo">
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6 col-12">
+                <div class="form-wrap form-date form-devider"><span>Departure</span>
+                  <label class="form-label form-label-outside rd-input-label" for="rd-departure-time"></label>
+                  <input class="form-input" id="rd-departure-time" type="text" name="time" data-time-picker="time, date" placeholder="Check-out date" data-dtp="dtp_Ysmeq">
+                </div>
+              </div>
+              <div class="col-xl-2 col-md-6 col-12">
+                <div class="form-wrap form-date form-devider"><span>Adults</span>
+                  <div class="select2-container form-input select" id="s2id_autogen1"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-2">1</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen2" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-2" id="s2id_autogen2"><div class="select2-drop select2-display-none">   <div class="select2-search select2-search-hidden select2-offscreen">       <label for="s2id_autogen2_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-2" id="s2id_autogen2_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-2">   </ul></div></div><select class="form-input select" name="find-job-location" data-minimum-results-for-search="Infinity" tabindex="-1" title="" style="display: none;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-12">
+                <div class="form-wrap form-date"><span>Children</span>
+                  <div class="form-btn-section">
+                    <div class="select2-container form-input select" id="s2id_autogen3"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-4">1</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen4" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-4" id="s2id_autogen4"><div class="select2-drop select2-display-none">   <div class="select2-search select2-search-hidden select2-offscreen">       <label for="s2id_autogen4_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-4" id="s2id_autogen4_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-4">   </ul></div></div><select class="form-input select" name="find-job-location" data-minimum-results-for-search="Infinity" tabindex="-1" title="" style="display: none;">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select><a class="button button-primary button-lg button-block" href="#">check availability</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-sm bg-gray-light" id="about">
+        <div class="container">
+          <div class="row row-50 justify-content-xl-between align-items-lg-center">
+            <div class="col-lg-6 col-xl-7 wow-outer">
+              <div class="wow slideInLeft text-xl-center" style="visibility: hidden; animation-name: none;"><img class="image-style-2" src="images/home-3-1-483x327.jpg" alt="" width="483" height="327">
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-5 wow-outer">
+              <div class="wow slideInRight" style="visibility: hidden; animation-name: none;">
+                <h3>Welcome to Peak</h3>
+                <p>Peak is a family-owned  hotel that desires to cater and provide guests with personalized hospitality based on what they prefer.</p>
+                <p>While we aim to give you an authentic experience  whenever you stay with us, we also guarantee consistent high standards of customer service at Roof. Contemporary amenities and timeless elegance  are reflected throughout every guest room at our luxury hotel. We hope to make your stay unforgettable in the best way.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-lg bg-default" id="rooms">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-9 col-lg-7 wow-outer">
+              <div class="wow slideInDown" style="visibility: hidden; animation-name: none;">
+                <h3>Rooms &amp; Suites</h3>
+                <p class="text-opacity-80">At our hotel, there is a variety of rooms to choose from. Whether you are a casual traveler or a person demanding luxury wherever you go, you won’t be disappointed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row row-10 row-lg-30">
+            <div class="col-md-6 col-lg-4 wow-outer">
+              <div class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                <div class="team-minimal">
+                  <div class="team-minimal-figure"><img src="images/room-minimal-1-370x395.jpg" alt="" width="370" height="395"><a class="button button-primary" href="#">Book now</a>
+                  </div>
+                  <div class="team-minimal-caption">
+                    <h4><a class="team-name" href="#">Suite</a></h4>
+                    <p>$90\per night</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow-outer">
+              <div class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                <div class="team-minimal">
+                  <div class="team-minimal-figure"><img src="images/room-minimal-2-370x395.jpg" alt="" width="370" height="395"><a class="button button-primary" href="#">Book now</a>
+                  </div>
+                  <div class="team-minimal-caption">
+                    <h4><a class="team-name" href="#">Double Room</a></h4>
+                    <p>$60\per night</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow-outer">
+              <div class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                <div class="team-minimal">
+                  <div class="team-minimal-figure"><img src="images/room-minimal-3-370x395.jpg" alt="" width="370" height="395"><a class="button button-primary" href="#">Book now</a>
+                  </div>
+                  <div class="team-minimal-caption">
+                    <h4><a class="team-name" href="#">Family Room</a></h4>
+                    <p>$40\per night</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-lg bg-gray-light" id="menu">
+        <div class="container">
+          <h3 class="text-center">Our Restaurant Menu</h3>
+          <div class="row">
+            <div class="col-12">
+              <div class="tabs-custom tabs-horizontal tabs-classic" id="tabs-1">
+                <ul class="nav nav-tabs nav-tabs-classic">
+                  <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1" data-toggle="tab">Mains</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2" data-toggle="tab">Desserts</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-3" data-toggle="tab">Drinks</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-1-1">
+                    <div class="box-event-modern">
+                      <div class="event-item-modern event-active"> <span class="event-dot"></span>
+                        <p class="event-time">$45.89</p>
+                        <h4 class="event-item-modern-title"><a href="#">Crayfish Tail &amp; Prawn Cocktail</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Succulent cold water prawns &amp; crayfish tails on baby gem, coated in Marie Rose sauce served with brown bread and butter.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern"> <span class="event-dot"></span>
+                        <p class="event-time">$44.89</p>
+                        <h4 class="event-item-modern-title"><a href="#">Chicken Broccoli Penne</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Oven-roasted seasoned chicken, fresh broccoli and penne tossed in a creamy four cheese sauce. Served with warm Rustic Bread.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern"> <span class="event-dot"></span>
+                        <p class="event-time">$43.89</p>
+                        <h4 class="event-item-modern-title"><a href="#">Apple Harvest Chicken Salad</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Fresh crisp greens tossed in a creamy ciderhouse dressing. Topped with flame-broiled chicken, green apples, dried cranberries and sliced almonds.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern"> <span class="event-dot"></span>
+                        <p class="event-time">$42.89</p>
+                        <h4 class="event-item-modern-title"><a href="#">Seared Steak &amp; Four Cheese Flatbread</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Thin flatbread, glazed with a smoked gouda cheese sauce topped with caramelized onions, fresh peppers, seared sirloin steak, provolone, mozzarella and bleu cheese.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-2">
+                    <div class="box-event-modern">
+                      <div class="event-item-modern event-active"> <span class="event-dot"></span>
+                        <p class="event-time">$40.89</p>
+                        <h4 class="event-item-modern-title"><a href="#">Towering Midnight Fudge Cake</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Moist chocolate cake with Oreo® cookie crumbles baked inside. Served warm with creamy vanilla bean ice cream, hot fudge and whipped cream.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern"> <span class="event-dot"></span>
+                        <p class="event-time">$46.89</p>
+                        <h4 class="event-item-modern-title"><a href="#">Apple Caramel Streusel Pie</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Flaky pie crust filled with caramel and sweet and tart apples. Skillet-baked, topped with a sweet oat streusel and served with creamy vanilla bean ice cream.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern"> <span class="event-dot"></span>
+                        <p class="event-time">$47.89</p>
+                        <h4 class="event-item-modern-title"><a href="#">Hot Fudge Sundae</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Creamy vanilla bean ice cream topped with hot fudge, whipped cream and a cherry. A perfect dessert to finish  your evening at our restaurant.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern event-active"> <span class="event-dot"></span>
+                        <p class="event-time">$48.89</p>
+                        <h4 class="event-item-modern-title"><a href="#">Baked Chocolate Chip Cookie Skillet</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>A warm and gooey New England classic. A fresh skillet-baked chocolate chip cookie topped with creamy vanilla bean ice cream and a drizzle of chocolate sauce.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-3">
+                    <div class="box-event-modern">
+                      <div class="event-item-modern event-active"> <span class="event-dot"></span>
+                        <p class="event-time">$50.89</p>
+                        <h4 class="event-item-modern-title"><a href="#">Fresh Fruit Sangria</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Handcrafted blend of Camila Malbec red wine and fruit juice. Served chilled over ice with seasonal fresh fruit.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern event-active"> <span class="event-dot"></span>
+                        <p class="event-time">$55.89</p>
+                        <h4 class="event-item-modern-title"><a href="#">Patrón Agave Martini</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Patrón Silver 100% Agave Tequila, Connecticut’s own RIPE® Cold-Pressed Agave margarita mix and freshly squeezed lime juice. Served straight up and chilled.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern event-active"> <span class="event-dot"></span>
+                        <p class="event-time">$62.89</p>
+                        <h4 class="event-item-modern-title"><a href="#">Mango Mai Tai</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Small batch Privateer Silver Rum made in Ipswich, MA, mixed with Gosling’s Black Seal Rum, Amaretto, all-natural mango puree, pineapple juice and sour mix.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern event-active"> <span class="event-dot"></span>
+                        <p class="event-time">$60.89</p>
+                        <h4 class="event-item-modern-title"><a href="#">Apple Fire</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>A handcrafted combo of Angry Orchard Hard Cider and Jack Daniel’s Fire Whiskey. A great way to warm up on a crisp day.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-xl section-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h3>Book Now</h3>
+              <!-- RD Mailform-->
+              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
+                <div class="row row-20 gutters-20">
+                  <div class="col-lg-6">
+                    <div class="form-wrap">
+                      <input class="form-input form-control-has-validation" id="contact-name" type="text" name="name" data-constraints="@Required"><span class="form-validation"></span>
+                      <label class="form-label rd-input-label" for="contact-name">Name</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-wrap">
+                      <div class="select2-container form-input select" id="s2id_autogen5"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-6">Room</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen6" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-6" id="s2id_autogen6"><div class="select2-drop select2-display-none">   <div class="select2-search select2-search-hidden select2-offscreen">       <label for="s2id_autogen6_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-6" id="s2id_autogen6_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-6">   </ul></div></div><select class="form-input select" name="book-select" data-minimum-results-for-search="Infinity" tabindex="-1" title="" style="display: none;">
+                        <option value="1">Room</option>
+                        <option value="2">Room</option>
+                        <option value="3">Room</option>
+                        <option value="4">Room</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-wrap">
+                  <input class="form-input form-control-has-validation" id="contact-email" type="email" name="email" data-constraints="@Email @Required"><span class="form-validation"></span>
+                  <label class="form-label rd-input-label" for="contact-email">Email</label>
+                </div>
+                <div class="form-wrap">
+                  <label class="form-label rd-input-label" for="contact-message"> Message</label>
+                  <textarea class="form-input form-control-has-validation form-control-last-child" id="contact-message" name="message" data-constraints="@Required"></textarea><span class="form-validation"></span>
+                </div>
+                <div class="form-button">
+                  <button class="button button-lg button-primary" type="submit">Send request</button>
+                </div>
+              </form>
+            </div><img class="image-style-1 d-none d-md-inline-block" src="images/image-1-560x700.png" alt="" width="560" height="700">
+          </div>
+        </div><img class="logo-style-1" src="images/logo-gray-1642x438.png" alt="" width="1642" height="438">
+      </section>
+      <section class="section" id="gallery">
+        <div class="row isotope-wrap">
+          <!-- Isotope Content-->
+          <div class="col-lg-12">
+            <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group" data-lg-thumbnail="false" style="position: relative; height: 375.812px;">
+              <div class="row no-gutters row-condensed">
+                <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="*" style="position: absolute; left: 0px; top: 0px;">
+                  <div class="wow slideInDown" style="visibility: hidden; animation-name: none;">
+                    <div class="gallery-item-classic"><img src="images/gallery-masonry-1-640x429.jpg" alt="" width="640" height="429">
+                      <div class="gallery-item-classic-caption"><a href="images/gallery-masonry-1-original.jpg" data-lightgallery="item">zoom</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="Category 3" style="position: absolute; left: 280px; top: 0px;">
+                  <div class="wow slideInDown" style="visibility: hidden; animation-name: none;">
+                    <div class="gallery-item-classic"><img src="images/gallery-masonry-2-640x429.jpg" alt="" width="640" height="429">
+                      <div class="gallery-item-classic-caption"><a href="images/gallery-masonry-2-original.jpg" data-lightgallery="item">zoom</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 isotope-item wow-outer" data-filter="Category 3" style="position: absolute; left: 560px; top: 0px;">
+                  <div class="wow slideInDown" style="visibility: hidden; animation-name: none;">
+                    <div class="gallery-item-classic"><img src="images/gallery-masonry-3-640x429.jpg" alt="" width="640" height="429">
+                      <div class="gallery-item-classic-caption"><a href="images/gallery-masonry-3-original.jpg" data-lightgallery="item">zoom</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 3" style="position: absolute; left: 0px; top: 187px;">
+                  <div class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                    <div class="gallery-item-classic"><img src="images/gallery-masonry-4-960x429.jpg" alt="" width="960" height="429">
+                      <div class="gallery-item-classic-caption"><a href="images/gallery-masonry-4-original.jpg" data-lightgallery="item">zoom</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 2" style="position: absolute; left: 420px; top: 187px;">
+                  <div class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                    <div class="gallery-item-classic"><img src="images/gallery-masonry-5-960x429.jpg" alt="" width="960" height="429">
+                      <div class="gallery-item-classic-caption"><a href="images/gallery-masonry-5-original.jpg" data-lightgallery="item">zoom</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-lg text-center">
+        <div class="container">
+          <div class="row row-50">
+            <div class="col-md-6 col-lg-4 wow-outer">
+              <div class="wow slideInLeft" style="visibility: hidden; animation-name: none;">
+                <div class="box-icon-classic">
+                  <div class="box-icon-inner decorate-triangle"><span class="icon-xl linearicons-woman"></span></div>
+                  <div class="box-icon-caption">
+                    <h4><a href="#">Qualified Team</a></h4>
+                    <p>We employ the best people in the hospitality industry that are highly qualified and treat our guests kindly.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow-outer">
+              <div class="wow slideInDown" style="visibility: hidden; animation-name: none;">
+                <div class="box-icon-classic">
+                  <div class="box-icon-inner decorate-circle"><span class="icon-xl linearicons-platter"></span></div>
+                  <div class="box-icon-caption">
+                    <h4><a href="#">Restaurant</a></h4>
+                    <p>Feel free to visit our restaurant to enjoy the best dishes and appetizers as well as  exclusive dishes from our chef.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow-outer">
+              <div class="wow slideInRight" style="visibility: hidden; animation-name: none;">
+                <div class="box-icon-classic">
+                  <div class="box-icon-inner decorate-rectangle"><span class="icon-xl linearicons-leaf"></span></div>
+                  <div class="box-icon-caption">
+                    <h4><a href="#">SPA Salon</a></h4>
+                    <p>Indulge yourself with the best relaxation available at our hotel’s SPA salon. Trust us, you won’t regret!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section parallax-container" data-parallax-img="images/parallax-img-1.jpg"><div class="material-parallax parallax"><img src="images/parallax-img-1.jpg" alt="" style="display: block;"></div>
+        <div class="parallax-content section-xl context-dark text-center bg-dark-filter">
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col-md-10 wow-outer">
+                <div class="wow fadeInUp" style="visibility: hidden; animation-name: none;">
+                  <h3 class="font-family-serif font-weight-medium">Providing High-quality Accommodation</h3><a class="button button-lg button-primary offset-top-60" href="#">Book now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-lg bg-default" id="news">
+        <div class="container wow-outer">
+          <h3 class="text-center wow slideInDown" style="visibility: hidden; animation-name: none;">Recent News</h3>
+          <!-- Owl Carousel-->
+          <div class="owl-carousel owl-dots-dark wow fadeInUp owl-loaded" data-items="1" data-md-items="2" data-lg-items="3" data-dots="true" data-nav="false" data-stage-padding="15" data-loop="false" data-margin="30" data-mouse-drag="false" style="visibility: hidden; animation-name: none;">
+            
+            
+            
+            
+            
+            
+          <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2100px; padding-left: 15px; padding-right: 15px;"><div class="owl-item active" style="width: 315px; margin-right: 30px;"><div class="post-corporate"><a class="badge post-corporate-badge" href="#">Jul 02, 2019</a>
+              <h4 class="post-corporate-title"><a href="#">6 Tips on Booking the Best Hotel for You This Season</a></h4>
+              <div class="post-corporate-text">
+                <p>Travelers today are spoiled for choice when it comes to booking a hotel. Booking the best hotel goes beyond just booking the cheapest...</p>
+              </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+            </div></div><div class="owl-item active" style="width: 315px; margin-right: 30px;"><div class="post-corporate"><a class="badge post-corporate-badge" href="#">Jul 02, 2019</a>
+              <h4 class="post-corporate-title"><a href="#">Hotel Safety Tips You Should Not Ignore Wherever You Travel</a></h4>
+              <div class="post-corporate-text">
+                <p>These days, travel is no Sunday picnic and when you finally stumble into the lobby of your hotel, you may be tired, dirty, and in a hurry to get...</p>
+              </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+            </div></div><div class="owl-item" style="width: 315px; margin-right: 30px;"><div class="post-corporate"><a class="badge post-corporate-badge" href="#">aug 02, 2019</a>
+              <h4 class="post-corporate-title"><a href="#">5 Simple Tips for Getting Stellar Hotel Service</a></h4>
+              <div class="post-corporate-text">
+                <p>While good service at a hotel, even a pricey one, isn’t a guarantee, there are a few ways to increase your odds of getting treated well. Here’s how you...</p>
+              </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+            </div></div><div class="owl-item" style="width: 315px; margin-right: 30px;"><div class="post-corporate"><a class="badge post-corporate-badge" href="#">Sept 02, 2019</a>
+              <h4 class="post-corporate-title"><a href="#">10 Ways to Sleep Better at a Hotel</a></h4>
+              <div class="post-corporate-text">
+                <p>We’ve compiled one of the most comprehensive guides available to sleeping in a hotel, covering everything from what you should ask when you’re booking...</p>
+              </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+            </div></div><div class="owl-item" style="width: 315px; margin-right: 30px;"><div class="post-corporate"><a class="badge post-corporate-badge" href="#">Oct 23, 2019</a>
+              <h4 class="post-corporate-title"><a href="#">How Much Should You Tip Your Bellman?</a></h4>
+              <div class="post-corporate-text">
+                <p>Whether you're traveling around the United States or somewhere across the pond, you're likely to encounter a helpful bellman during your hotel stay. No…</p>
+              </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+            </div></div><div class="owl-item" style="width: 315px; margin-right: 30px;"><div class="post-corporate"><a class="badge post-corporate-badge" href="#">Nov 20, 2019</a>
+              <h4 class="post-corporate-title"><a href="#">12 Hotel Hacks That Will Save You Money</a></h4>
+              <div class="post-corporate-text">
+                <p>Anyone can book a hotel room — but not everyone can save big while doing it. Travel like a genius with these 12 hotel hacks that will help you save money on…</p>
+              </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+            </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+        </div>
+      </section>
+      <section class="section parallax-container" data-parallax-img="images/parallax-img-2.jpg"><div class="material-parallax parallax"><img src="images/parallax-img-2.jpg" alt="" style="display: block;"></div>
+        <div class="parallax-content section-xxl context-dark text-center bg-dark-filter">
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col-md-9 col-lg-8 col-xl-7 wow-outer">
+                <div class="wow slideInDown" style="visibility: hidden; animation-name: none;">
+                  <h3 class="text-capitalize">Subscribe to Stay Informed</h3>
+                  <form class="rd-form rd-mailform rd-form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
+                    <div class="form-wrap">
+                      <input class="form-input form-control-has-validation" id="subscribe-form-email" type="email" name="email" data-constraints="@Email @Required"><span class="form-validation"></span>
+                      <label class="form-label rd-input-label" for="subscribe-form-email">Your E-mail</label>
+                    </div>
+                    <div class="form-button">
+                      <button class="button button-primary button-lg" type="submit">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Page Footer-->
+      <footer class="section footer-minimal context-dark">
+        <div class="container wow-outer">
+          <div class="wow fadeIn" style="visibility: hidden; animation-name: none;">
+            <div class="row row-60">
+              <div class="col-12"><a href="index.html"><img src="images/logo-inverse-123x55.png" alt="" width="123" height="55" srcset="images/logo-inverse-246x110.png 2x"></a></div>
+              <div class="col-12">
+                <ul class="footer-minimal-nav">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Rooms</a></li>
+                  <li><a href="#">Menu</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">News</a></li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <ul class="social-links">
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" href="#"></a></li>
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" href="#"></a></li>
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-twitter" href="#"></a></li>
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-youtube-play" href="#"></a></li>
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-pinterest-p" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="rights"><span>©&nbsp;</span><span class="copyright-year">2021</span><span>&nbsp;</span><span>Peak</span><span>.&nbsp;</span><a href="#">Privacy Policy</a></p>
+        </div>
+      </footer>
+    </div>
