@@ -4,6 +4,7 @@
     width: 100%;
     background: linear-gradient(to bottom, rgba(70, 83, 100, 0.568), rgba(95, 107, 109, 0.486), rgba(43, 54, 66, 0.5822)), url(https://i.pinimg.com/564x/10/63/67/106367979f35f0d25c33d17a827a7633.jpg);
     background-repeat: repeat;
+    padding-bottom: 40px;
 }
 .py-2 {
     padding-top: .1rem!important;
@@ -219,8 +220,10 @@ div.star-section.offset-top-60:after {
 #back-contenido {
     background-color: #ffffff;
     padding: 70px;
+    padding-top: -0px;
     width: 100%;
     position: relative;
+    padding-top: 20px;
 }
 
 /* h2.elementor-intro.elementor-size-default {
@@ -231,7 +234,15 @@ div.star-section.offset-top-60:after {
     font-style: italic;
 } */
 
-/* Elemntor Opciones */
+/* Opciones */
+.opciones {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    border-width: 7px;
+    box-shadow: 0 0 0.9em #636363;
+}
+
 .elementor-opciones {
     width: 100%;
     position: relative;
@@ -249,11 +260,10 @@ div.star-section.offset-top-60:after {
     border-style: solid;
     border-width: 2px 2px 2px 2px;
     border-color: #ffb606;
-    margin-top: -10px;
+    margin-top: -7px;
     padding: 50px 40px 50px;
     transition: 0.2s;
     /* box-sizing: border-box; */
-    box-shadow: 0 0 0.2em #313131;
 }
 
 .box-icon, .box-title {
@@ -285,4 +295,30 @@ a:hover {
     color: rgba(55, 58, 58, 0.925);
     border-radius: 1px;
     cursor: pointer;
+}
+
+/* Pequeña información del hotel */
+.info {
+    padding: 60px 0px;
+    /* background-color: rgb(240, 240, 240); */
+}
+.info img {
+    border-radius: 7px;
+    margin: 0px 30px 0px;
+}
+
+.info h3 {
+    font-family: "Playfair Display", serif;
+    margin: 0px -30px 22px;
+    font-weight: 700;
+    color: #151515;
+    letter-spacing: 0;
+}
+.info p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin: 15px -30px 22px;
+    padding-right: 30px;
+    color: rgba(43, 42, 42, 0.8);
+    letter-spacing: 0;
 }
