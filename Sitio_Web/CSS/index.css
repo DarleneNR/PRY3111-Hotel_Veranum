@@ -318,19 +318,187 @@ a:hover {
 }
 .info p {
     font-family: "Poppins", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     margin: 15px -30px 22px;
     padding-right: 30px;
     color: rgba(43, 42, 42, 0.8);
     letter-spacing: 0;
 }
 
-/* Sección: Adelanto servicios extras */
+/* Sección: Última Información */
 .back-contenido2 {
     background-color: #FFFFFF;
     padding: 70px;
-    padding-top: -0px;
+    padding-top: 20px;
     width: 100%;
     position: relative;
     padding-top: 20px;
+}
+.back-contenido2 h2 {
+    font-family: "Playfair Display", serif;
+    margin: 0px 0px 25px;
+    font-weight: 700;
+    color: #151515;
+    letter-spacing: 0;
+}
+
+/* Servicios Extras */
+.serv-extras {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.serv-extras p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin: 25px 0px 22px;
+    color: rgba(24, 24, 24, 0.8);
+    letter-spacing: 0;
+}
+
+div#list-serv li {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: rgba(24, 24, 24, 0.8);
+}
+
+.serv-extras button {
+    width: 31%;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #151515;
+    font-weight: bolder;
+    background-color: #4e939e;
+    margin: 4% 27%;
+}
+.serv-extras button:hover {
+    color: #151515;
+    font-weight: bolder;
+    background-color: #5aa4b1ea;
+}
+
+/* Mensaje de Contacto */
+.contacto {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contacto form .row#campos {
+    padding-left: 20px;
+    margin-left: -10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: rgba(24, 24, 24, 0.8);
+    letter-spacing: 0;
+}
+.col-md-11 {
+    margin-bottom: 11px;
+}
+
+div.botones input#reset {
+    width: 16%;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #151515;
+    font-weight: bolder;
+    background-color: #4e939e;
+    margin-top: 15px;
+    margin-right: 150px;
+    float: right;
+}
+div.botones input#submit {
+    width: 16%;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #151515;
+    font-weight: bolder;
+    background-color: #4e939e;
+    margin-top: 15px;
+    margin-right: -190px;
+    float: right;
+}
+
+div.botones input:hover {
+    color: #151515;
+    font-weight: bolder;
+    background-color: #5aa4b1ea;
+}
+
+/* Footer  */
+.footer-minimal {
+    padding: 20px 20px;
+    text-align: center;
+    background: #343333;
+}
+
+footer div {
+    padding: 0px 20px 45px;
+}
+
+footer div.col-12 a {
+    font-family: "Abadi MT Condensed Light";
+    display: inline-block;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+footer div a {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+ul li {
+    text-decoration:none;
+    display: inline;
+}
+
+ul#list-footer li {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+li i{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    size: 90px;
+}
+ul.social-links {
+    padding-top: 40px;
+}
+.fab {
+    font-size: xx-large;
+}
+
+.footer-minimal ul li{
+    text-decoration:none;
+    color: #FFFFFF;
+}.footer-minimal ul li:hover{
+    text-decoration:none;
+    color: #537e99;
+}
+
+/* Copyright */
+.footer-minimal .rights {
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer-minimal * + .rights {
+    padding: 10px 0px 50px;
+}
+p.rights {
+    font-size: 14px;
+    color: rgba(21, 21, 21, 0.8);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Validación de Formulario */
+span.error { 
+    color: red; 
+    font-size: 0.7em;
+    margin-bottom: -10px;
 }
