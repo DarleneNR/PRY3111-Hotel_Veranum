@@ -2,9 +2,8 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(56, 75, 99, 0.568), rgba(158, 184, 189, 0.486), rgba(66, 95, 129, 0.582)), url(https://i.pinimg.com/564x/10/63/67/106367979f35f0d25c33d17a827a7633.jpg);
-    background-repeat: unset;
+    background: linear-gradient(to bottom, rgba(70, 83, 100, 0.568), rgba(95, 107, 109, 0.486), rgba(43, 54, 66, 0.5822)), url(https://i.pinimg.com/564x/10/63/67/106367979f35f0d25c33d17a827a7633.jpg);
+    background-repeat: repeat;
 }
 
 /* Barra de menú */
@@ -20,6 +19,7 @@
 .navbar .nav-link:focus {
     color: #fff;
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
 
 .navbar .navbar-brand {
@@ -55,6 +55,10 @@
     }
 }
 
+li {
+    text-align: -webkit-match-parent;
+}
+
 /* Animación y detalles de barra de menú */
 .text-small {
     font-size: 0.9rem !important;
@@ -62,29 +66,30 @@
 
 body {
     min-height: 110vh;
-    background-color: #ffffff;
-    background-image: linear-gradient(135deg, #cfcccc 0%, #413f44 100%);
+    background-color: #e7e5e5;
     line-height: 1.66667;
-    font-weight: 300;
-    color: rgba(21, 21, 21, 0.8);
-    background-color: #ffffff;
     letter-spacing: -0.03em;
     -webkit-text-size-adjust: none;
     -webkit-font-smoothing: subpixel-antialiased;
     margin: 0;
-    font-size: 0.7rem;
-    font-weight: 300;
-    line-height: 1.66667;
-    color: rgba(21, 21, 21, 0.8);
-    text-align: left;
-    background-color: #ffffff;
+}
+
+a.navbar-brand.text-uppercase.font-weight-bold {
+    font-family: "Abadi MT Condensed Light";
+    display: inline-block;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .25s;
 }
 
 a.nav-link.text-uppercase.font-weight-bold {
+    font-family: "Poppins", sans-serif;
     position: relative;
     display: inline-block;
     color: #ffffff;
-    font-size: 15px;
+    font-size:small;
     line-height: 1.2;
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -107,6 +112,17 @@ a.nav-link.text-uppercase.font-weight-bold:hover {
 /* Sección: Welcome */
 #welcome {
     padding: 6% 10%;
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 80px;
+    font-family: "Abadi MT Condensed Light";
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 550;
+    letter-spacing: 0;
+    letter-spacing: -0.03em;
 }
 i.fa.fa-star-o {
     position: relative;
@@ -115,17 +131,8 @@ i.fa.fa-star-o {
     font-style: normal;
     speak: none;
     text-transform: none;
-    font-size: 30px;
 }
-#welcome {
-    color: #FFFFFF;
-    font-size: 80px;
-    font-family: "Abadi MT Condensed Light";
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 550;
-    letter-spacing: 0;
-}
+
 #back-welcome.main-bunner .main-bunner-inner {
     position: relative;
     flex: 1;
@@ -158,8 +165,8 @@ div.star-section.offset-top-60:before {
     width: 85px;
     display: block;
     border-top: 1px solid;
-    margin-top: 90px;
-    margin-left: 340px;
+    margin-top: 30px;
+    margin-left: 330px;
 }
 div.star-section.offset-top-60:after {
     position: absolute;
@@ -168,6 +175,93 @@ div.star-section.offset-top-60:after {
     width: 85px;
     display: block;
     border-top: 1px solid;
-    margin-top: 90px;
-    margin-left: 630px;
+    margin-top: 30px;
+    margin-left: 640px;
+}
+
+/* Texto Welcome */
+.bunner-content-modern div p {
+    font-size: 18px;
+    max-width: 650px;
+    text-align: center;
+    margin: 30px auto auto;
+    /* font-family: Bahnschrift Light ,Segoe UI; */
+    font-family: "Poppins", sans-serif;
+    line-height: 1.66667;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* Sección: Introducción */
+#back-contenido {
+    background-color: #ffffff;
+    padding: 70px;
+    width: 100%;
+    position: relative;
+}
+
+/* h2.elementor-intro.elementor-size-default {
+    color: #2b2b2b;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+} */
+
+/* Elemntor Opciones */
+.elementor-opciones {
+    width: 100%;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#info-hotel, #info-serv, #info-centro {
+    padding: 50px 30px 50px;
+    align-content: center;
+    text-decoration: none;
+    /* background-color: rgb(190, 204, 204); */
+}
+#info-hotel:hover, #info-serv:hover, #info-centro:hover {
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #ffb606;
+    margin-top: -10px;
+    padding: 50px 40px 50px;
+    transition: 0.2s;
+    /* box-sizing: border-box; */
+    box-shadow: 0 0 0.2em #313131;
+}
+
+.box-icon, .box-title {
+    text-align: center;
+}
+
+.fa-concierge-bell:before, .fa-spa:before, .fa-building:before {
+    font-size: 70px;
+    color: #ffb606;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px auto auto;
+    /* font-family: Bahnschrift Light ,Segoe UI; */
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    line-height: 1.4;
+    font-weight: 800;
+    letter-spacing: 0px;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: #242425;
+}
+a:hover {
+    text-decoration: none;
+    color: rgba(55, 58, 58, 0.925);
+    border-radius: 1px;
+    cursor: pointer;
 }
