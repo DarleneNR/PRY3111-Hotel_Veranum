@@ -416,8 +416,12 @@ div.botones input#submit {
     margin-right: -190px;
     float: right;
 }
-
-div.botones input:hover {
+input#reset.btn.btn-secundary:hover {
+    color: #151515;
+    font-weight: bolder;
+    background-color: #5aa4b1ea;
+}
+input#submit.btn.btn-secundary:hover {
     color: #151515;
     font-weight: bolder;
     background-color: #5aa4b1ea;
@@ -451,6 +455,13 @@ footer div a {
     font-weight: bolder;
     text-transform: uppercase;
 }
+a.navbar-brand.text-uppercase.font-weight-bold:hover {
+    color: #FFFFFF;
+}
+footer div li a:hover {
+    color: #537e99;
+    transition: 0.4s;
+}
 
 ul li {
     text-decoration:none;
@@ -481,6 +492,7 @@ ul.social-links {
 }.footer-minimal ul li:hover{
     text-decoration:none;
     color: #537e99;
+    transition: 0.4s;
 }
 
 /* Copyright */
