@@ -29,10 +29,10 @@
         <div id="back-all">
             <div class="container" id="reserva">
                 <section>
-                    <h1>Reserva y disfruta de la experiencia</h1>
+                    <h1>Disfruta de la experiencia</h1>
                 </section>
                 <!-- Campos a llenar -->
-                <div class="campos">
+                <form id="form-reserva" action="../Controlador/procesar_reserva.php" name="reserva" method="POST">
                     <!-- Datos Personales -->
                     <div class="row row-50 justify-content-lg-center align-items-lg-center" id="contacto-general">
                         <span>Datos Personales</span>
@@ -63,8 +63,8 @@
                             <input id="init" name="init" type="date" class="form-control" required>
                         </div>
                         <div class="col-lg-3">
-                            <label for="finish" class="control-label col-xs-2">Hora estimada de inicio</label>
-                            <input id="finish" name="finish" type="time" class="form-control" required>
+                            <label for="init_time" class="control-label col-xs-2">Hora estimada de inicio</label>
+                            <input id="init_time" name="init_time" type="time" class="form-control" required>
                         </div>
                         <br><br><br>
                         <div class="col-lg-3">
@@ -72,8 +72,8 @@
                             <input id="finish" name="finish" type="date" class="form-control" required>
                         </div>
                         <div class="col-lg-3">
-                            <label for="finish" class="control-label col-xs-2">Hora estimada de salida</label>
-                            <input id="finish" name="finish" type="time" class="form-control" required>
+                            <label for="finish_time" class="control-label col-xs-2">Hora estimada de salida</label>
+                            <input id="finish_time" name="finish_time" type="time" class="form-control" required>
                         </div>
                         <br><br><br>
                     </div>
@@ -124,7 +124,7 @@
                                         $reg_tipo_hab = $sentencia->fetchAll(PDO::FETCH_OBJ);
                                         foreach ($reg_tipo_hab as $dato){
                                     ?>
-                                    <option id="nombre_hab" name="nombre_hab" value="<?php echo $dato->nom_tipo_hab;?>"><?php echo $dato->nom_tipo_hab;?></option>
+                                    <option id="tipo_hab" name="tipo_hab" value="<?php echo $dato->nom_tipo_hab;?>"><?php echo $dato->nom_tipo_hab;?></option>
                                     <?php } ?>
                                 </select>
                             </div>
@@ -139,14 +139,18 @@
                                         $reg_servicios = $sentencia_serv->fetchAll(PDO::FETCH_OBJ);
                                         foreach ($reg_servicios as $dato){
                                     ?>
-                                    <option id="nombre_hab" name="nombre_hab" value="<?php echo $dato->nombre_servicio;?>"><?php echo $dato->nombre_servicio;?></option>
+                                    <option id="tipo_serv" name="tipo_serv" value="<?php echo $dato->nombre_servicio;?>"><?php echo $dato->nombre_servicio;?></option>
                                     <?php } ?>
                                 </select>
                             </div>
                         </div>
                         <br><br><br>
+                        <div class="botones">
+                            <button type="reset" class="btn btn-info" id="volver_res" name="volver" value="volver" >Volver</button>
+                            <button type="submit" class="btn btn-primary" id="continuar_res" name="continuar_reserva" value="continuar_reserva" data-toggle="modal" data-target="#confirmarContinuar">Continuar</button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         
