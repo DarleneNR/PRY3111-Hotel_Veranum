@@ -1,0 +1,75 @@
+/* Background */
+#back-all {
+    background: linear-gradient(to bottom, rgba(70, 83, 100, 0.568), rgba(95, 107, 109, 0.486), rgba(43, 54, 66, 0.5822)), url(https://i.pinimg.com/564x/25/ba/b9/25bab970c6594d8da26faf24848ae94d.jpg);
+    width: 100%;
+    min-height: 110vh;
+    align-content: center;
+    padding: 20px;
+}
+
+/* Reserva */
+div#reserva {
+    background-color: #FFFFFF;
+    max-width: 80%;
+    box-shadow: 5px 7px 10px 3px #818181;
+    margin-top: 60px;
+    border-color: rgb(133, 133, 133);
+    border-radius: 7px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 90px;
+}
+div#reserva h1 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+/* Contacto General */
+div#contacto-general span {
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: #5f5e5e;
+}
+
+/* Entrada / Salida */
+div#preferencias {
+    padding-top: 30px;
+}
+div#preferencias span{
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: #5f5e5e;
+}
+
+/* Huéspedes */
+div#huespedes {
+    padding-top: 30px;
+}
+div#huespedes span{
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: #5f5e5e;
+}
+
+/* Habitación */
+#habitacion {
+    padding-top: 50px;
+    border-color: rgb(112, 112, 112);
+    border-radius: 7px;
+}
+div#habitacion span {
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: #5f5e5e;
+}
