@@ -32,7 +32,7 @@ $(document).ready(function () {
         errorElement : 'p',
     });
     //Redirección a página anterior
-    $('#volver_serv').click(function(){
-        location.href = "/PRY3111-Hotel_Veranum/Sistema_Gestion_Local/menu_serv_extras.php";
+    $('#volver_res').click(function(){
+        location.href = "index.html";
     });
 });
