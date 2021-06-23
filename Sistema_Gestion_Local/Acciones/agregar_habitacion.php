@@ -1,3 +1,9 @@
+<?php
+    include('../Controlador/connection.php');
+
+    $sentencia = $connection->query("SELECT * FROM tipo_hab");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -32,6 +38,21 @@
                                 <?php } ?>
 
                                 <!-- Campos para el ingreso de datos -->
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <label class="control-label col-xs-6" for="nombre_hab" style="padding-bottom: 45px;">Tipo de habitación: </label>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <select id="nombre_hab" name="nombre_hab" class="form-control" required>
+                                        <option value="" disabled selected>Selecciona una opción</option>
+                                        <?php
+                                            $reg_tipo_hab = $sentencia->fetchAll(PDO::FETCH_OBJ);
+                                            foreach ($reg_tipo_hab as $dato){
+                                        ?>
+                                        <option value="<?php echo $dato->nombre_tipo_hab;?>"><?php echo $dato->nombre_tipo_hab;?></option>
+                                        <?php } ?>
+                                    </select>
+                                </div>
+                                
                                 <div class="col-md-4 col-sm-4 col-xs-4">
                                     <label class="control-label col-xs-6" for="nombre_hab" style="padding-bottom: 45px;">Nombre: </label>
                                 </div>
