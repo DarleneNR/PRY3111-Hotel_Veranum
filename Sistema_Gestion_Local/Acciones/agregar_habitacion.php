@@ -39,7 +39,7 @@
 
                                 <!-- Campos para el ingreso de datos -->
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-6" for="nombre_hab" style="padding-bottom: 45px;">Tipo de habitación: </label>
+                                    <label class="control-label col-xs-6" for="nombre_hab" style="padding-bottom: 45px;">Tipo de habitación:</label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
                                     <select id="nombre_hab" name="nombre_hab" class="form-control" required>
@@ -71,7 +71,7 @@
                                     <label class="control-label col-xs-2" for="precio_hab" style="padding-bottom: 45px;">Precio: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" id="precio_hab" name="precio_hab" type="number" placeholder="Costo diario" minlength="4"   Z required/>
+                                    <input class="form-control" id="precio_hab" name="precio_hab" type="number" placeholder="Costo diario" minlength="4" required/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
