@@ -116,6 +116,6 @@ div#habitacion span {
 
 /* Validación de Formulario */
 p.error{ 
-    color: red; 
+    color: red;
     font-size: 0.8em;
 }
