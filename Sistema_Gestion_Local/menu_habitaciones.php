@@ -45,8 +45,8 @@
                     </thead>
                     <tbody>
                         <?php
-                            $reg_servicios =$sentencia->fetchAll(PDO::FETCH_OBJ);
-                            foreach ($reg_servicios as $dato){
+                            $reg_habitaciones =$sentencia->fetchAll(PDO::FETCH_OBJ);
+                            foreach ($reg_habitaciones as $dato){
                                 ?>
                                 <tr>
                                     <td><?php echo $dato->id_habitacion;?></td>
