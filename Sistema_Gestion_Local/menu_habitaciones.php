@@ -38,9 +38,9 @@
                         <tr>
                             <th>ID</th>
                             <th>Tipo de habitación</th>
-                            <th>Precio</th>
                             <th>Cantidad camas</th>
                             <th>Cantidad baños</th>
+                            <th>Precio</th>
                             <th>Descripción</th>
                             <th>Acciones</th>
                         </tr>
@@ -53,8 +53,8 @@
                                 <tr>
                                     <td><?php echo $dato->id_habitacion;?></td>
                                     <td><?php echo ucfirst($dato->nom_tipo_hab);?></td>
-                                    <td>$<?php echo $dato->cantidad_cama;?></td>
-                                    <td>$<?php echo $dato->cantidad_banio;?></td>
+                                    <td><?php echo $dato->cantidad_cama;?></td>
+                                    <td><?php echo $dato->cantidad_banio;?></td>
                                     <td>$<?php echo $dato->precio;?></td>
                                     <td><?php echo ucfirst($dato->desc_habitacion);?></td>
                                     <td>

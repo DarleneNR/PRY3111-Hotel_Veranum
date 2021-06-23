@@ -21,12 +21,16 @@ $(document).ready(function () {
     /* Habitaciones */
     $('#form-agregar-hab').validate({
         rules: {
-            nombre_hab: {required: true, minlength: 4, maxlength: 150},
+            nombre_hab: {required: true},
+            cant_camas: {required: true, minlength: 1, maxlength: 2},
+            cant_bannos: {required: true, minlength: 1, maxlength: 2},
             precio_hab: {required: true, min: 1000, maxlength: 400000},
             descripcion: {required: true, minlength: 5, maxlength: 300}
         },
         messages: {
-            nombre_hab: "El campo Nombre es obligatorio.",
+            nombre_hab: "El campo Tipo Habitación es obligatorio.",
+            cant_camas: "El campo Cantidad Camas es obligatorio.",
+            cant_bannos: "El campo Cantidad Baños es obligatorio.",
             precio_hab: "El campo Precio es obligatorio.",
             descripcion: "El campo Descripción es obligatorio."
         },

@@ -48,16 +48,23 @@
                                             $reg_tipo_hab = $sentencia->fetchAll(PDO::FETCH_OBJ);
                                             foreach ($reg_tipo_hab as $dato){
                                         ?>
-                                        <option value="<?php echo $dato->nombre_tipo_hab;?>"><?php echo $dato->nombre_tipo_hab;?></option>
+                                        <option id="nombre_hab" name="nombre_hab" value="<?php echo $dato->nombre_tipo_hab;?>"><?php echo $dato->nombre_tipo_hab;?></option>
                                         <?php } ?>
                                     </select>
                                 </div>
-                                
+                                <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <label class="control-label col-xs-6" for="nombre_hab" style="padding-bottom: 45px;">Nombre: </label>
+                                    <label class="control-label col-xs-6" for="cant_camas" style="padding-bottom: 45px;">Cant. camas: </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" id="nombre_hab" name="nombre_hab" type="text" placeholder="Nombre tipo de habitación" minlength="5" required/>
+                                    <input class="form-control" id="cant_camas" name="cant_camas" type="number" placeholder="1" minlength="1" required/>
+                                </div>
+                                <br><br>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <label class="control-label col-xs-6" for="cant_bannos" style="padding-bottom: 45px;">Cant. baños: </label>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <input class="form-control" id="cant_bannos" name="cant_bannos" type="number" placeholder="1" minlength="1" required/>
                                 </div>
                                 <br><br>
                                 <div class="col-md-4 col-sm-4 col-xs-4">

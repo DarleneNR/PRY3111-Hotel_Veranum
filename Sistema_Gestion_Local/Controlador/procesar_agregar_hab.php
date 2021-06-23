@@ -7,11 +7,13 @@ if (isset($_POST['agregar_habitacion'])) {
 
     // Aquí se está captando los datos ingresados en los campos mencionados
     $nombre_hab = ucfirst(trim($_POST['nombre_hab']));
+    $cant_bannos = $_POST['cant_bannos'];
+    $cant_camas = $_POST['cant_camas'];
     $precio_hab = trim($_POST['precio_hab']);
     $descripcion = ucfirst(trim($_POST['descripcion']));
 
     // Aquí se consulta si el nombre del servicio existe en la DB 
-    $query = $connection->prepare("SELECT * FROM servicios_extras WHERE NOM_TIPO_HAB=:nombre_habitacion");
+    $query = $connection->prepare("SELECT * FROM habitacion WHERE NOM_TIPO_HAB=:nombre_habitacion");
     $query->bindParam("nombre_habitacion", $nombre_hab, PDO::PARAM_STR);
     $query->execute();
 
@@ -22,8 +24,10 @@ if (isset($_POST['agregar_habitacion'])) {
 
     // Si el nombre del servicio no existe entonces se muestra el mensaje 
     if ($query->rowCount() == 0) {
-        $query = $connection->prepare("INSERT INTO habitacion(NOM_TIPO_HAB,PRECIO,DESC_HABITACION) VALUES (:nombre_hab,:precio_hab,:descripcion)");
+        $query = $connection->prepare("INSERT INTO habitacion(NOM_TIPO_HAB,CANTIDAD_BANIO,CANTIDAD_CAMA,PRECIO,DESC_HABITACION) VALUES (:nombre_hab,:cant_bannos,:cant_camas,:precio_hab,:descripcion)");
         $query->bindParam("nombre_hab", $nombre_hab, PDO::PARAM_STR);
+        $query->bindParam("cant_bannos", $cant_bannos, PDO::PARAM_STR);
+        $query->bindParam("cant_camas", $cant_camas, PDO::PARAM_STR);
         $query->bindParam("precio_hab", $precio_hab, PDO::PARAM_STR);
         $query->bindParam("descripcion", $descripcion, PDO::PARAM_STR);
 
