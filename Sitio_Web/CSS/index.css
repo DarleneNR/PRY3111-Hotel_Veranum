@@ -69,6 +69,86 @@ li {
     text-align: -webkit-match-parent;
 }
 
+/* Opción: Ingresar */
+.list-ingresar {
+    /* background-color: #d4d4d42d; */
+    border-color: rgb(70, 69, 69);
+    border-radius: 7px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+header ul li a {
+    display: block;
+    padding: 0px 0px 0px 0px;
+    color: #737373;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 15px;
+}
+header ul li:hover a {
+    color: #242323;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header ul ul {
+    position: absolute;
+    display: block;
+    background-color: #d8dada94;
+    border-radius: 0.6em;
+    transform: translateX(4%);
+    opacity: 0;
+    transition: all.2s;
+    font-family: "Microsoft Sans Serif";
+}
+
+.ingresar {
+    width: 140px;
+    margin-left: -25px;
+    padding-left: 20px;
+    margin-top: -5px;
+}
+
+/* Animación en los sub menús e ícono*/
+header ul li a span {
+    transition: all.2s;
+    padding: 0px auto;
+}
+header ul li a:hover span {
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+header ul li:hover ul {
+    opacity: 1;
+    transform: translateX(0%);
+}
+header ul ul li:hover {
+    padding: 0;
+    transform: translateX(5%);
+    transition: all.3s;
+}
+
+/* Estilos Sub-Menu : Ingresar */
+a.a-ingresar {
+    margin-bottom:10px;
+    margin-left:-25px;
+    color:#1d1d1d;
+    font-size:15px;
+}
+a.a-ingresar:hover {
+    color: #3b3b3b;
+    margin-bottom:10px;
+    margin-left:-25px;
+    font-size:15px;
+    transform: translateX(5%);
+    transition: all.2s;
+}
+
 /* Animación y detalles de barra de menú */
 .text-small {
     font-size: 0.9rem !important;
@@ -107,7 +187,7 @@ a.nav-link.text-uppercase.font-weight-bold {
     transition: .25s;
 }
 a.nav-link.text-uppercase.font-weight-bold:hover {
-    color: rgb(89, 89, 90);
+    color: rgb(27, 27, 27);
     display: block;
     transition: all 0.3s ease-in-out;
     animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
@@ -123,7 +203,8 @@ a.nav-link.text-uppercase.font-weight-bold:hover {
 #reservar {
     background-color: rgba(67, 138, 67, 0.925);
     border-color: rgb(82, 81, 81);
-    
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 #reservar:hover {
     color: #FFFFFF;
