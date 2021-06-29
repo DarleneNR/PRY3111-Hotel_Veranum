@@ -73,7 +73,7 @@ li {
 .list-ingresar {
     /* background-color: #d4d4d42d; */
     border-color: rgb(70, 69, 69);
-    border-radius: 7px;
+    border-radius: 6px;
 }
 
 header ul {
@@ -87,7 +87,7 @@ header ul li a {
     text-decoration: none;
     font-weight: bolder;
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 header ul li:hover a {
     color: #242323;
