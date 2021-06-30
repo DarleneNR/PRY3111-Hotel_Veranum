@@ -6,6 +6,7 @@
   
 body {
     font-family: "Poppins", sans-serif;
+    max-height: 1100hv;
 }
 
 .back {
@@ -18,16 +19,17 @@ body {
     padding-top: 50px;
 }
 
-/* Opción: ¿Olvidaste tu contraseña */
+/* Opciones: Registrarme - Iniciar Sesión */
 a {
     transition: .3s ease;
-    color: #92badd;
+    color: #4e6981;
     display: inline-block;
     text-decoration: none;
     font-weight: 500;
 }
 a:hover {
-    color: #161616;
+    color: #242424;
+    text-decoration: none;
 }
 
 .form {
@@ -191,7 +193,7 @@ textarea {
     margin: 0;
 }
 
-/* Botón */
+/* Botones */
 .btn {
     margin: 0% 25%;
     border-radius: 1rem;
@@ -215,8 +217,38 @@ textarea {
     box-shadow: 0 0 9px 0 rgba(0,0,0,0.3);
     border-color: #3b3b3b;
 }
+
+.boton1 {
+    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-left: -15px;
+}
   
 .forgot {
     margin-top: -20px;
     text-align: right;
+}
+
+/* Sección: Iniciar Sesión */
+.sec-login {
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-bottom: 60px;
+}
+
+/* Opción: ¿Olvidaste tu contraseña */
+.forgot {
+    color: #5fbae9;
+    text-align: center;
+}
+.boton2 {
+    margin-left: 15px;
+    margin-bottom: 60px;
+    margin-top: -10px;
+}
+
+/* Mensaje de Errores */
+span.error{ 
+    color: red; 
+    font-size: 0.7em;
 }

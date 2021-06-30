@@ -30,7 +30,7 @@
                 <div class="tab-content">
                     <!-- Registro -->
                     <div id="signup">
-                        <form action="/" method="post">
+                        <form id="form-registration" action="/" method="post">
                             <!-- Campos -->
                             <div class="top-row" style="margin-top:50px">
                                 <div class="field-wrap">
@@ -46,7 +46,6 @@
                                     <input id="dv_rut" name="dv_rut" class="form-control" type="text" required autocomplete="off"/>
                                 </div>
                             </div>
-
                             <div class="top-row">
                                 <div class="field-wrap">
                                     <label for= "nombre">
@@ -61,56 +60,64 @@
                                     <input id="apellido" name="apellido" class="form-control" type="text" required autocomplete="off"/>
                                 </div>
                             </div>
-
                             <div class="top-row">
                                 <div class="field-wrap" for="fec_nac">
-                                    <label>Fecha de nacimiento<span class="req">*</span></label>
+                                    <label for="">
+                                        Fecha de nacimiento<span class="req">*</span>
+                                    </label>
                                 </div>
                                 <div class="field-wrap">
                                     <input id="fec_nac" name="fec_nac"  class="form-control" type="date" required autocomplete="off"/>
                                 </div>
                             </div>
-
                             <div class="field-wrap" style="margin-top:20px;">
-                                <label>
+                                <label for="email">
                                     Email<span class="req">*</span>
                                 </label>
-                                <input class="form-control" type="email" required autocomplete="off"/>
+                                <input id="email" name="email" class="form-control" type="email" required autocomplete="off"/>
                             </div>
-            
-                            <div class="field-wrap">
-                                <label>
-                                    Set A Password<span class="req">*</span>
-                                </label>
-                                <input class="form-control" type="password" required autocomplete="off"/>
+                            <div class="top-row">
+                                <div class="field-wrap">
+                                    <label for="username">
+                                        Nombre de Usuario<span class="req">*</span>
+                                    </label>
+                                    <input id="username" name="username" class="form-control" type="text" maxlength="15" required autocomplete="off"/>
+                                </div>
+                                <div class="field-wrap">
+                                    <label for="pass">
+                                        Contraseña<span class="req">*</span>
+                                    </label>
+                                    <input id="pass" name="pass" class="form-control" type="password" maxlength="10" required autocomplete="off"/>
+                                </div>
                             </div>
-            
-                            <button type="submit" class="btn btn-info" id="agregar_serv" name="agregar_servicio" value="agregar_servicio"/>Empezar</button>
+                            <div class="boton1">
+                                <button id="registrar" name="registrar" type="submit" class="btn btn-info" value="registrar"/>Empezar</button>
+                            </div>
                         </form>
                     </div>
 
                     <!-- Iniciar Sesión -->
-                    <div id="login">   
-                        <h1>Welcome Back!</h1>
-            
-                        <form action="/" method="post">
-            
-                            <div class="field-wrap">
-                                <label>
-                                    Email Address<span class="req">*</span>
-                                </label>
-                                <input class="form-control" type="email" required autocomplete="off"/>
+                    <div id="login">
+                        <form id="form-login" action="/" method="post">
+                            <!-- Campos -->
+                            <div class="sec-login">
+                                <div class="field-wrap secc">
+                                    <label>
+                                        Nombre de Usuario<span class="req">*</span>
+                                    </label>
+                                    <input class="form-control" type="text" required autocomplete="off"/>
+                                </div>
+                                <div class="field-wrap">
+                                    <label>
+                                        Constraseña<span class="req">*</span>
+                                    </label>
+                                    <input class="form-control" type="password" required autocomplete="off"/>
+                                </div>
+                                <p class="forgot"><a href="#" id="a-" title="Haz click aquí">¿Olvidaste tu contraseña?</a></p>
                             </div>
-            
-                            <div class="field-wrap">
-                                <label>
-                                    Password<span class="req">*</span>
-                                </label>
-                                <input class="form-control" type="password" required autocomplete="off"/>
+                            <div class="boton2">
+                                <button id="login" name="login" type="submit" class="btn btn-info" value="login"/>Log In</button>
                             </div>
-            
-                            <p class="forgot"><a href="#">Forgot Password?</a></p>
-                            <button class="button button-block"/>Log In</button>
                         </form>
                     </div>
                 </div>
@@ -124,6 +131,6 @@
     <!-- Validación con librerias -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-
+    
     <script type="text/javascript" src="./JS/registration.js"></script>
 </html>

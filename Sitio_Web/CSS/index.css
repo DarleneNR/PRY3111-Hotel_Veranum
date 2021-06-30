@@ -69,9 +69,8 @@ li {
     text-align: -webkit-match-parent;
 }
 
-/* Opción: Ingresar */
-.list-ingresar {
-    /* background-color: #d4d4d42d; */
+/* .list-ingresar {
+     background-color: #d4d4d42d;
     border-color: rgb(70, 69, 69);
     border-radius: 6px;
 }
@@ -111,10 +110,10 @@ header ul ul {
     margin-left: -25px;
     padding-left: 20px;
     margin-top: -5px;
-}
+} */
 
 /* Animación en los sub menús e ícono*/
-header ul li a span {
+/* header ul li a span {
     transition: all.2s;
     padding: 0px auto;
 }
@@ -131,10 +130,10 @@ header ul ul li:hover {
     padding: 0;
     transform: translateX(5%);
     transition: all.3s;
-}
+} */
 
 /* Estilos Sub-Menu : Ingresar */
-a.a-ingresar {
+/* a.a-ingresar {
     margin-bottom:10px;
     margin-left:-25px;
     color:#1d1d1d;
@@ -148,7 +147,7 @@ a.a-ingresar:hover {
     transform: translateX(5%);
     transition: all.2s;
 }
-
+ */
 /* Animación y detalles de barra de menú */
 .text-small {
     font-size: 0.9rem !important;
@@ -199,6 +198,20 @@ a.nav-link.text-uppercase.font-weight-bold:hover {
     animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
 
+/* Botón para Ingresar */
+#ingresar {
+    background-color: rgba(66, 132, 134, 0.925);
+    border-color: rgb(78, 78, 78);
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+#ingresar:hover {
+    color: #FFFFFF;
+    background-color: rgba(78, 159, 161, 0.925);
+    border-color: rgb(100, 99, 99);
+    border-radius: 4px;
+}
+
 /* Botón para reservar */
 #reservar {
     background-color: rgba(67, 138, 67, 0.925);
@@ -209,7 +222,7 @@ a.nav-link.text-uppercase.font-weight-bold:hover {
 #reservar:hover {
     color: #FFFFFF;
     background-color: rgb(85, 170, 85);
-    border-color: rgb(116, 115, 115);
+    border-color: rgb(100, 99, 99);
     border-radius: 4px;
 }
 
