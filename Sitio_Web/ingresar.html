@@ -30,7 +30,7 @@
                 <div class="tab-content">
                     <!-- Registro -->
                     <div id="signup">
-                        <form id="form-registration" action="/" method="post">
+                        <form id="form-registration" action="/PRY3111-Hotel_Veranum/Sitio_Web/Controlador/registration.php" name="registrar" method="POST">
                             <!-- Campos -->
                             <div class="top-row" style="margin-top:50px">
                                 <div class="field-wrap">
@@ -43,7 +43,7 @@
                                     <label for="dv_rut">
                                         DV<span class="req">*</span>
                                     </label>
-                                    <input id="dv_rut" name="dv_rut" class="form-control" type="text" required autocomplete="off"/>
+                                    <input id="dv_rut" name="dv_rut" class="form-control" type="text" maxlength="1" required autocomplete="off"/>
                                 </div>
                             </div>
                             <div class="top-row">
@@ -81,7 +81,7 @@
                                     <label for="username">
                                         Nombre de Usuario<span class="req">*</span>
                                     </label>
-                                    <input id="username" name="username" class="form-control" type="text" maxlength="15" required autocomplete="off"/>
+                                    <input id="username" name="username" class="form-control" type="text" maxlength="15" required unique autocomplete="off"/>
                                 </div>
                                 <div class="field-wrap">
                                     <label for="pass">
@@ -98,7 +98,7 @@
 
                     <!-- Iniciar Sesión -->
                     <div id="login">
-                        <form id="form-login" action="/" method="post">
+                        <form id="form-login" action="/PRY3111-Hotel_Veranum/Sitio_Web/Controlador/login.php" name="iniciar_s" method="POST">
                             <!-- Campos -->
                             <div class="sec-login">
                                 <div class="field-wrap secc">

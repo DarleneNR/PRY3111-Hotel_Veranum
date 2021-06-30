@@ -1,8 +1,5 @@
 <?php
 
-// Función para almacenar los mensajes de confirmaciones
-session_start();
-
 define('USER', 'root');
 define('PASSWORD', '');
 define('HOST', 'localhost');

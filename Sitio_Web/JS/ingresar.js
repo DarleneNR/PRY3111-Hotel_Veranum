@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('#form-registration').validate({
         rules: {
             num_rut: {required: true, minlength: 7, maxlength: 13},
-            dv_rut: {required: true, maxlength: 1},
+            dv_rut: {required: true, minlength: 1, maxlength: 1},
             nombre: {required: true, minlength: 3, maxlength: 40},
             apellido: {required: true, minlength: 5, maxlength: 40},
             fec_nac: {required: true},
