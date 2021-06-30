@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    /* Servicios Extras */
+    /* Registro de Cliente */
     $('#form-registration').validate({
         rules: {
             num_rut: {required: true, minlength: 7, maxlength: 13},
@@ -8,7 +8,7 @@ $(document).ready(function () {
             apellido: {required: true, minlength: 5, maxlength: 40},
             fec_nac: {required: true},
             email: {required: true, minlength: 13, maxlength: 30},
-            username: {required: true, minlength: 5, maxlength: 20},
+            username: {required: true, minlength: 8, maxlength: 20},
             pass: {required: true, minlength:7, maxlength: 10}
         },
         messages: {
@@ -22,8 +22,21 @@ $(document).ready(function () {
             pass: "El campo Constraseña es obligatorio."
         },
         errorElement : 'span',
-
     });
+
+    /* Inicio de Sesión */
+    $('#form-login').validate({
+        rules: {
+            username_login: {required: true, minlength: 8, maxlength: 20},
+            pass_login: {required: true, minlength:7, maxlength: 10}
+        },
+        messages: {
+            username_login: "Debe ingresar su nombre de usuario",
+            pass_login: "Debe ingresar su contraseña"
+        },
+        errorElement : 'label',
+    });
+
     //Redirección a página anterior
     $('#volver').click(function(){
         location.href = "/PRY3111-Hotel_Veranum/Sitio_Web/index.html";

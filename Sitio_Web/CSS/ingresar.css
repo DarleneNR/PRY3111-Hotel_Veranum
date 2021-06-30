@@ -13,7 +13,13 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(131, 151, 180, 0.568), rgba(128, 167, 173, 0.507), rgba(80, 107, 117, 0.582)), url(https://i.pinimg.com/236x/dd/24/16/dd2416398385716a617ec247d2cef0fc.jpg);
+    padding-top: 50px;
+    /* background: linear-gradient(to bottom, rgba(131, 151, 180, 0.568), rgba(128, 167, 173, 0.507), rgba(80, 107, 117, 0.582)), url(https://i.pinimg.com/236x/e6/d2/0e/e6d20ec7d8e65e6eedfd36908a71fc3f.jpg); */
+    /* background: rgb(122, 189, 190);
+    background: linear-gradient(135deg, rgb(99, 155, 177) 23%, rgb(224, 205, 95) 100%);  */
+    background: -webkit-linear-gradient(75deg, rgba(226, 217, 138, 0.973) 20%, rgba(106, 131, 121, 0.89) 80%);
+    background: -moz-linear-gradient(75deg, rgba(226, 217, 138, 0.973) 20%, rgba(106, 131, 121, 0.89) 80%);
+    background: -ms-linear-gradient(75deg, rgba(226, 217, 138, 0.973) 20%, rgba(106, 131, 121, 0.89) 80%);
     background-repeat: repeat;
     padding-bottom: 50px;
     padding-top: 50px;
@@ -240,15 +246,21 @@ textarea {
 .forgot {
     color: #5fbae9;
     text-align: center;
+    padding-top: 10px;
+    margin-bottom: -20px;
 }
 .boton2 {
     margin-left: 15px;
     margin-bottom: 60px;
-    margin-top: -10px;
 }
 
 /* Mensaje de Errores */
 span.error{ 
     color: red; 
     font-size: 0.7em;
+}
+label.error{ 
+    color: red; 
+    font-size: 0.7em;
+    margin-top: -7px;
 }
